@@ -17,19 +17,28 @@ export function MainNav() {
   const pathname = usePathname();
 
   return (
-    <nav className="hidden md:flex items-center gap-5 text-sm text-slate-600">
-      {navItems.map((item) => (
-        <Link
-          key={item.href}
-          href={item.href}
-          className={clsx(
-            "transition-colors hover:text-primary",
-            pathname === item.href && "text-primary font-medium"
-          )}
-        >
-          {item.label}
-        </Link>
-      ))}
+    <nav className="hidden md:flex items-center gap-5 text-base font-semibold">
+      {navItems.map((item) => {
+        const isActive = pathname === item.href;
+
+        return (
+          <Link
+            key={item.href}
+            href={item.href}
+            className={clsx(
+              "px-3 py-1 rounded-md transition-all duration-200",
+              // default
+              "text-white",
+              // hover
+              "hover:bg-[#f7c948] hover:text-black",
+              // active link
+              isActive && "bg-[#f7c948] text-black shadow-sm"
+            )}
+          >
+            {item.label}
+          </Link>
+        );
+      })}
     </nav>
   );
 }

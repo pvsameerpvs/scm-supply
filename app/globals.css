@@ -131,3 +131,13 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+.industry-mask {
+  /* make the image appear INSIDE the text */
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  /* keep your stroke */
+  /* -webkit-text-stroke: 4px #1e293b; */
+}

@@ -4,6 +4,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
+import { Anton } from "next/font/google";
+
+// Load Anton font ONLY for INDUSTRY text
+const anton = Anton({
+  weight: "400",
+  subsets: ["latin"],
+});
 
 const heroImages = [
   "/hero1.jpg",
@@ -20,14 +27,15 @@ export default function HeroSection() {
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prev) => (prev + 1) % heroImages.length);
-    }, 10000); // 10 seconds
+    }, 10000);
     return () => clearInterval(interval);
   }, []);
 
   return (
     <section className="relative bg-black text-white min-h-[calc(100vh-64px)] overflow-hidden">
       {/* SLIDING BACKGROUND IMAGES */}
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 bg-black/40 z-[1]" />
         {heroImages.map((img, i) => (
           <div
             key={i}
@@ -45,8 +53,6 @@ export default function HeroSection() {
           </div>
         ))}
       </div>
-
-      {/* DARK LEFT OVERLAY */}
 
       {/* CONTENT WRAPPER */}
       <div className="relative z-20 grid md:grid-cols-2 min-h-[calc(100vh-64px)]">
@@ -81,18 +87,25 @@ export default function HeroSection() {
         {/* RIGHT SIDE – YELLOW PANEL */}
         <div className="relative bg-[#f7c948] text-slate-900 flex py-8 px-4 sm:px-6 md:px-10 overflow-hidden">
           <div
-            className="
-              leading-none font-black uppercase tracking-tight
-              text-transparent
-              text-6xl sm:text-7xl lg:text-[140px]
-              [text-stroke:4px_#1e293b]
-              [-webkit-text-stroke:4px_#1e293b]
-              pointer-events-none
-              w-full md:w-auto
-              text-center md:text-left
-              mb-8 md:mb-0
-              md:absolute md:left-1 lg:-left-4 md:top-1/2 md:-translate-y-1/2
-            "
+            className={`
+    ${anton.className}
+    leading-none uppercase tracking-wide
+    text-7xl sm:text-8xl lg:text-[180px] xl:text-[220px]
+    pointer-events-none
+    w-full md:w-auto
+    text-center md:text-left
+    mb-8 md:mb-0
+    md:absolute md:left-1 lg:-left-4 md:top-1/2 md:-translate-y-1/2
+    industry-mask
+  `}
+            style={{
+              backgroundImage: `
+    linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+    url(${heroImages[index]})
+  `,
+              backgroundPosition: "center",
+              backgroundSize: "cover",
+            }}
           >
             <span className="block">IN</span>
             <span className="block">DUS</span>
