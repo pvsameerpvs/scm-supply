@@ -24,7 +24,7 @@ const brandLogos: Record<string, string> = {
   "mcmaster-carr": "/McMaster-Carr.png",
   uline: "/uline.png",
 };
-export const brandColors: Record<string, string> = {
+const brandColors: Record<string, string> = {
   "mcmaster-carr": "#2E5A2C", // Dark green
   grainger: "#C8102E", // Red
   uline: "#00509E", // Blue
