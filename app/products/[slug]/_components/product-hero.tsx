@@ -51,17 +51,29 @@ export function ProductHero({ product }: Props) {
           </p>
         )}
 
-        <div className="flex flex-wrap gap-3 pt-1">
-          <Link href="/contact">
+        <div className="flex flex-col gap-3 pt-1 w-full sm:flex-row sm:flex-wrap sm:justify-end">
+          <Link href="/contact" className="w-full sm:w-auto">
             <Button
               size="md"
-              className="bg-yellow-400 hover:bg-yellow-500 text-slate-900 border border-yellow-500 shadow-sm"
+              className="
+        w-full sm:w-auto
+        bg-yellow-400 hover:bg-yellow-500 
+        text-slate-900 border border-yellow-500 shadow-sm
+        flex items-center
+      "
             >
-              Request Quote for {product.name}
+              <span className="truncate max-w-[240px] sm:max-w-[260px]">
+                Request Quote for {product.name}
+              </span>
             </Button>
           </Link>
-          <a href="#product-tabs">
-            <Button size="md" variant="outline">
+
+          <a href="#product-tabs" className="w-full sm:w-auto">
+            <Button
+              size="md"
+              variant="outline"
+              className="w-full sm:w-auto flex items-center justify-center"
+            >
               View Product Details
             </Button>
           </a>
