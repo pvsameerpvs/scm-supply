@@ -35,7 +35,7 @@ export default function ContactPage() {
             inquiries, supplier registrations, and project requirements.
           </p>
         </header>
-        \
+
         <section className="grid gap-8 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)]">
           {/* LEFT: OFFICE INFO + RFQ INFO */}
           <div className="space-y-6 text-sm md:text-base">

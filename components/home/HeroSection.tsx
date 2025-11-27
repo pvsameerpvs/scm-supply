@@ -88,7 +88,12 @@ export default function HeroSection() {
 
           <div className="flex flex-wrap gap-3 mt-6 md:mt-4">
             <Link href="/contact">
-              <Button size="sm">Request RFQ</Button>
+              <Button
+                size="sm"
+                className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold"
+              >
+                Request RFQ
+              </Button>
             </Link>
 
             <Link href="/products">
