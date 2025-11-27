@@ -123,7 +123,7 @@ export default function WhyChooseUsStepper() {
                     "Reduce time spent chasing multiple suppliers and quotes.",
                     "Standardize communication, documentation and follow-up.",
                   ]}
-                  imageSrc="/CustomersWeSupport.jpg"
+                  imageSrc="/tabs1.jpg"
                   imageAlt="Single source procurement"
                 />
               </TabsContent>
@@ -138,7 +138,7 @@ export default function WhyChooseUsStepper() {
                     "Flexible sourcing routes across USA, Europe and regional stock.",
                     "Proactive alternatives if original items are obsolete or delayed.",
                   ]}
-                  imageSrc="/CustomersWeSupport.jpg"
+                  imageSrc="/tabs5.jpg"
                   imageAlt="Fast sourcing of critical parts"
                 />
               </TabsContent>
@@ -153,7 +153,7 @@ export default function WhyChooseUsStepper() {
                     "Support for tools, instrumentation, HVAC, electrical and MEP packages.",
                     "Helping engineering and maintenance teams validate specifications.",
                   ]}
-                  imageSrc="/CustomersWeSupport.jpg"
+                  imageSrc="/tabs3.jpg"
                   imageAlt="Technical and MRO expertise"
                 />
               </TabsContent>
@@ -168,7 +168,7 @@ export default function WhyChooseUsStepper() {
                     "Direct access to USA and international brands.",
                     "Optimized shipping routes for Middle East, Africa, Europe and Asia.",
                   ]}
-                  imageSrc="/CustomersWeSupport.jpg"
+                  imageSrc="/tabs2.jpg"
                   imageAlt="Global sourcing base"
                 />
               </TabsContent>
@@ -183,7 +183,7 @@ export default function WhyChooseUsStepper() {
                     "Consolidated shipments and optimized freight planning.",
                     "Transparent lead-times and communication for every order.",
                   ]}
-                  imageSrc="/CustomersWeSupport.jpg"
+                  imageSrc="/tabs4.jpg"
                   imageAlt="Reliable logistics and documentation"
                 />
               </TabsContent>
