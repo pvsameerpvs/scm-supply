@@ -24,11 +24,11 @@ export const productCategories: ProductCategory[] = [
   heroNote:
     "High-performance abrasives for workshops, fabrication shops, construction, shipyards and maintenance teams – delivered across UAE & GCC.",
   images: [
-    "/images/products/11.jpeg",
-    "/images/products/12.jpeg",
-    "/images/products/13.jpeg"
+    "/images/products/15A. Abrasives, Grinding & Surface Prep.png",
+    "/images/products/15A. Abrasives, Grinding & Surface Prep.png",
+    "/images/products/15A. Abrasives, Grinding & Surface Prep.png"
   ],
-  coverProductImage: "/images/products/11.jpeg",
+  coverProductImage: "/images/products/15. Abrasives, Grinding & Surface Prep.png",
   bullets: [
     "Cutting wheels & cut-off discs for metal, stainless steel, aluminum and concrete.",
     "Grinding wheels, depressed-center discs, bench-grinder wheels and stone/concrete cups.",
@@ -136,11 +136,11 @@ Send us the part number, specifications, or a photo — and we’ll source it qu
   heroNote:
     "High-performance adhesives, sealants & bonding solutions for construction, fabrication, automotive, electrical, HVAC and maintenance teams – delivered across UAE & GCC.",
   images: [
-    "/images/products/adhesives-1.jpeg",
-    "/images/products/adhesives-2.jpeg",
-    "/images/products/adhesives-3.jpeg"
+    "/images/products/16. Adhesives, Sealants & Bonding Solutions.png",
+    "/images/products/16. Adhesives, Sealants & Bonding Solutions.png",
+    "/images/products/16. Adhesives, Sealants & Bonding Solutions.png"
   ],
-  coverProductImage: "/images/products/adhesives-1.jpeg",
+  coverProductImage: "/images/products/16. Adhesives, Sealants & Bonding Solutions.png",
   bullets: [
     "Industrial adhesives including multi-purpose, structural, instant and specialty grades for plastics & composites.",
     "Epoxy systems for structural bonding, metal repair, concrete anchoring and high-strength, high-temperature applications.",
@@ -248,11 +248,11 @@ Send us the part number, description, or a photo — and we’ll source it quick
   heroNote:
     "High-performance cleaning, janitorial & maintenance supplies for warehouses, workshops, factories and FM teams – delivered across UAE & GCC.",
   images: [
-    "/images/products/cleaning-1.jpeg",
-    "/images/products/cleaning-2.jpeg",
-    "/images/products/cleaning-3.jpeg"
+    "/images/products/13. Cleaning, Janitorial & Maintenance Chemicals.png",
+    "/images/products/13. Cleaning, Janitorial & Maintenance Chemicals.png",
+    "/images/products/13. Cleaning, Janitorial & Maintenance Chemicals.png"
   ],
-  coverProductImage: "/images/products/cleaning-1.jpeg",
+  coverProductImage: "/images/products/13A. Cleaning, Janitorial & Maintenance Chemicals.png",
   bullets: [
     "Floor care tools including scrub brushes, heavy-duty brooms, mops, buckets and squeegees.",
     "Industrial cleaners such as degreasers, detergents, solvent-based, citrus and bio-based cleaning chemicals.",
@@ -340,11 +340,11 @@ Share the part number, specs, or a photo, and we’ll source it promptly with de
   heroNote:
     "High-performance pneumatic, compressed air and vacuum components for automation, machinery, fabrication and industrial facilities – delivered across UAE & GCC.",
   images: [
-    "/images/products/pneumatics-1.jpeg",
-    "/images/products/pneumatics-2.jpeg",
-    "/images/products/pneumatics-3.jpeg"
+    "/images/products/6. Compressed Air, Pneumatics & Vacuum Systems.png",
+    "/images/products/6A. Compressed Air, Pneumatics & Vacuum Systems.png",
+    "/images/products/6A. Compressed Air, Pneumatics & Vacuum Systems.png"
   ],
-  coverProductImage: "/images/products/pneumatics-1.jpeg",
+  coverProductImage: "/images/products/6B. Compressed Air, Pneumatics & Vacuum Systems.png",
   bullets: [
     "Air compressors, filters, separators and receiver tanks for industrial air supply.",
     "FRL units including filters, regulators, lubricators and air dryers for clean, conditioned compressed air.",
@@ -458,11 +458,11 @@ Send us the part number, description, or a photo — and we’ll source it quick
   heroNote:
     "High-quality electrical and automation components for industrial plants, MEP contractors, OEMs, and maintenance teams – delivered across UAE & GCC.",
   images: [
-    "/images/products/electrical-1.jpeg",
-    "/images/products/electrical-2.jpeg",
-    "/images/products/electrical-3.jpeg"
+    "/images/products/4A. Electrical, Wiring & Industrial Automation.png",
+    "/images/products/4A. Electrical, Wiring & Industrial Automation.png",
+    "/images/products/4A. Electrical, Wiring & Industrial Automation.png"
   ],
-  coverProductImage: "/images/products/electrical-1.jpeg",
+  coverProductImage: "/images/products/4. Electrical, Wiring & Industrial Automation.png",
   bullets: [
     "Power cables, control cables, instrumentation cables and complete cable management accessories.",
     "Electrical connectors, industrial plugs, sockets, lugs, terminals and DIN-rail mounted terminal blocks.",
@@ -578,11 +578,11 @@ Send us the part number, description, or a photo—and we’ll source it quickly
   heroNote:
     "Hygienic, durable and food-grade supplies for kitchens, restaurants, cafeterias, hotels, catering companies and cloud kitchens — delivered across UAE & GCC.",
   images: [
-    "/images/products/foodservice-1.jpeg",
-    "/images/products/foodservice-2.jpeg",
-    "/images/products/foodservice-3.jpeg"
+    "/images/products/21 Food Service, Prep & Hospitality Equipment.png",
+    "/images/products/21 Food Service, Prep & Hospitality Equipment.png",
+    "/images/products/21 Food Service, Prep & Hospitality Equipment.png"
   ],
-  coverProductImage: "/images/products/foodservice-1.jpeg",
+  coverProductImage: "/images/products/21 Food Service, Prep & Hospitality Equipment.png",
   bullets: [
     "Disposable food packaging including foil trays, plastic containers, kraft boxes, microwave-safe and biodegradable options.",
     "Eco-friendly and standard tableware: kraft plates, biodegradable bowls, deli containers, portion cups and catering-grade serving items.",
@@ -804,11 +804,11 @@ Share the part number, specs, or a photo — and we’ll source it promptly with
   heroNote:
     "High-performance HVAC and air movement products built for UAE climatic conditions — ventilation, cooling, heating & airflow systems delivered across UAE & GCC.",
   images: [
-    "/images/products/hvac-1.jpeg",
-    "/images/products/hvac-2.jpeg",
-    "/images/products/hvac-3.jpeg"
+    "/images/products/5A. HVAC, Air Movement & Temperature Control.png",
+    "/images/products/5A. HVAC, Air Movement & Temperature Control.png",
+    "/images/products/5A. HVAC, Air Movement & Temperature Control.png"
   ],
-  coverProductImage: "/images/products/hvac-1.jpeg",
+  coverProductImage: "/images/products/5. HVAC, Air Movement & Temperature Control.png",
   bullets: [
     "Industrial and commercial fans, blowers, inline units, exhaust fans and roof-mounted ventilators.",
     "HVAC motors, EC motors, blower motors, pulleys, belts, sheaves and VFD drives.",
@@ -917,11 +917,11 @@ Send us the part number, description, or a photo — and we’ll source it quick
   heroNote:
     "High-performance industrial hoses and hose management solutions for air, water, fuel, chemicals, hydraulics & high-pressure systems — delivered fast across UAE & GCC.",
   images: [
-    "/images/products/hoses-1.jpeg",
-    "/images/products/hoses-2.jpeg",
-    "/images/products/hoses-3.jpeg"
+    "/images/products/7A. Industrial Hoses, Hose Reels & Hose Accessories.png",
+    "/images/products/7A. Industrial Hoses, Hose Reels & Hose Accessories.png",
+    "/images/products/7A. Industrial Hoses, Hose Reels & Hose Accessories.png"
   ],
-  coverProductImage: "/images/products/hoses-1.jpeg",
+  coverProductImage: "/images/products/7. Industrial Hoses, Hose Reels & Hose Accessories.png",
   bullets: [
     "Air and pneumatic hoses including rubber, PVC, reinforced and high-pressure air hose assemblies.",
     "Water, steam, suction, discharge and high-pressure washer hoses for industrial and commercial applications.",
@@ -1040,11 +1040,11 @@ Send us the part number, specifications, or a photo — and we’ll source it qu
   heroNote:
     "Durable, high-efficiency lighting solutions engineered for industrial, commercial, outdoor and hazardous environments — delivered across UAE & GCC.",
   images: [
-    "/images/products/lighting-1.jpeg",
-    "/images/products/lighting-2.jpeg",
-    "/images/products/lighting-3.jpeg"
+    "/images/products/14B. Industrial Lighting & Electrical Fixtures.png",
+    "/images/products/14B. Industrial Lighting & Electrical Fixtures.png",
+    "/images/products/14B. Industrial Lighting & Electrical Fixtures.png"
   ],
-  coverProductImage: "/images/products/lighting-1.jpeg",
+  coverProductImage: "/images/products/14A. Industrial Lighting & Electrical Fixtures.png",
   bullets: [
     "LED high-bay and low-bay luminaires for warehouses, workshops and production areas.",
     "Floodlights and outdoor lighting including high-output, weatherproof and solar-powered options.",
@@ -1155,11 +1155,11 @@ Share the part number, description, or a photo — and we’ll source it quickly
   heroNote:
     "High-quality inserts and industrial fittings for mechanical, plumbing, pneumatic, hydraulic and fabrication applications — delivered across UAE & GCC.",
   images: [
-    "/images/products/inserts-1.jpeg",
-    "/images/products/inserts-2.jpeg",
-    "/images/products/inserts-3.jpeg"
+    "/images/products/12. Plumbing, Piping, Tubing & Fluid Fittings.png",
+    "/images/products/12. Plumbing, Piping, Tubing & Fluid Fittings.png",
+    "/images/products/12. Plumbing, Piping, Tubing & Fluid Fittings.png"
   ],
-  coverProductImage: "/images/products/inserts-1.jpeg",
+  coverProductImage: "/images/products/12A. Plumbing, Piping, Tubing & Fluid Fittings.png",
   bullets: [
     "Threaded inserts including rivet nuts, press-fit, heat-set, helical coils, self-tapping & flanged inserts.",
     "Pipe fittings including elbows, tees, reducers, hex nipples, bushings and plugs in NPT, BSP and metric standards.",
@@ -1489,11 +1489,11 @@ Send us the part number, link, or screenshot — and we’ll source it immediate
   heroNote:
     "High-performance motors, drives, gearboxes, actuators and motion components for industrial automation, HVAC, mechanical systems and manufacturing lines — delivered across UAE & GCC.",
   images: [
-    "/images/products/motion-1.jpeg",
-    "/images/products/motion-2.jpeg",
-    "/images/products/motion-3.jpeg"
+    "/images/products/8. Motors, Drives & Motion Components.png",
+    "/images/products/8. Motors, Drives & Motion Components.png",
+    "/images/products/8. Motors, Drives & Motion Components.png"
   ],
-  coverProductImage: "/images/products/motion-1.jpeg",
+  coverProductImage: "/images/products/8A. Motors, Drives & Motion Components.png",
   bullets: [
     "Electric motors including AC induction, high-efficiency IE2/IE3, explosion-proof, brake motors and HVAC motors.",
     "Gearboxes and speed reducers including helical, worm, planetary, inline, right-angle and heavy-duty torque reducers.",
@@ -1601,11 +1601,11 @@ Send us the part number, specifications, or a photo — and we’ll source it qu
   heroNote:
     "High-quality packaging, office and warehouse supplies designed for efficiency, durability and daily operational needs — delivered across UAE & GCC.",
   images: [
-    "/images/products/packaging-1.jpeg",
-    "/images/products/packaging-2.jpeg",
-    "/images/products/packaging-3.jpeg"
+    "/images/products/20A. Office, Packaging & Warehouse Supplies.png",
+    "/images/products/20A. Office, Packaging & Warehouse Supplies.png",
+    "/images/products/20A. Office, Packaging & Warehouse Supplies.png"
   ],
-  coverProductImage: "/images/products/packaging-1.jpeg",
+  coverProductImage: "/images/products/20. Office, Packaging & Warehouse Supplies.png",
   bullets: [
     "Packaging materials including cardboard boxes, bubble rolls, foam sheets, void fill, kraft paper, stretch film and edge protectors.",
     "Tapes and adhesives including packing tape, duct tape, masking tape, double-sided tape, floor marking tape and tape dispensers.",
@@ -1718,11 +1718,11 @@ Share the part number, specs or a photo, and we’ll source it promptly with del
   heroNote:
     "Durable, weather-resistant outdoor and garden tools for landscaping, maintenance, agriculture and field service — delivered anywhere in the UAE & GCC.",
   images: [
-    "/images/products/outdoor-1.jpeg",
-    "/images/products/outdoor-2.jpeg",
-    "/images/products/outdoor-3.jpeg"
+    "/images/products/22 Outdoor, Garden & Field Tools.png",
+    "/images/products/22 Outdoor, Garden & Field Tools.png",
+    "/images/products/22 Outdoor, Garden & Field Tools.png"
   ],
-  coverProductImage: "/images/products/outdoor-1.jpeg",
+  coverProductImage: "/images/products/22A Outdoor, Garden & Field Tools.png",
   bullets: [
     "Garden hand tools including shovels, rakes, hoes, shears, pruners and trimming equipment.",
     "Sprayers and watering tools including hand sprayers, backpack sprayers, pressure sprayers and watering cans.",
@@ -1818,11 +1818,11 @@ Share the part number, specs, or a photo, and we’ll source it promptly with de
   heroNote:
     "High-quality piping, tubing, connectors and fluid fittings for water, air, chemicals, oil, gas and hydraulic systems — delivered across UAE & GCC.",
   images: [
-    "/images/products/piping-1.jpeg",
-    "/images/products/piping-2.jpeg",
-    "/images/products/piping-3.jpeg"
+    "/images/products/12. Plumbing, Piping, Tubing & Fluid Fittings.png",
+    "/images/products/12. Plumbing, Piping, Tubing & Fluid Fittings.png",
+    "/images/products/12. Plumbing, Piping, Tubing & Fluid Fittings.png"
   ],
-  coverProductImage: "/images/products/piping-1.jpeg",
+  coverProductImage: "/images/products/12A. Plumbing, Piping, Tubing & Fluid Fittings.png",
   bullets: [
     "Pipes in stainless steel, carbon steel, galvanized steel, brass, copper, aluminum, PVC, CPVC, PPR, HDPE and flexible metal options.",
     "Pipe fittings including elbows, tees, reducers, unions, nipples, threaded fittings and welded fittings in NPT, BSP and metric standards.",
@@ -1939,11 +1939,11 @@ Send us the part number, specification, or a photo — and we’ll source it qui
   heroNote:
     "Certified PPE and industrial safety equipment for construction, oil & gas, MEP, manufacturing and industrial operations — delivered across UAE, GCC and worldwide.",
   images: [
-    "/images/products/ppe-1.jpeg",
-    "/images/products/ppe-2.jpeg",
-    "/images/products/ppe-3.jpeg"
+    "/images/products/3A. Safety, Facility Protection & Workplace Supplies.png",
+    "/images/products/3B. Safety, Facility Protection & Workplace Supplies.png",
+    "/images/products/3B. Safety, Facility Protection & Workplace Supplies.pngg"
   ],
-  coverProductImage: "/images/products/ppe-1.jpeg",
+  coverProductImage: "/images/3. Safety, Facility Protection & Workplace Supplies.png",
   bullets: [
     "Safety gloves including cut-resistant, chemical-resistant, disposable, heat-resistant, welding and electrical-insulated gloves.",
     "Head protection including helmets, hard hats, bump caps, visors and welding helmets.",
@@ -2056,11 +2056,11 @@ Send us the part number, product details, or a photo and we will source it quick
   heroNote:
     "Reliable, genuine and application-specific pumping solutions for oil & gas, water, HVAC, fire systems, industrial plants and construction — delivered across UAE & GCC.",
   images: [
-    "/images/products/pumps-1.jpeg",
-    "/images/products/pumps-2.jpeg",
-    "/images/products/pumps-3.jpeg"
+    "/images/products/10A.Pumps, Tanks & Liquid Handling.png",
+    "/images/products/10A.Pumps, Tanks & Liquid Handling.png",
+    "/images/products/10A.Pumps, Tanks & Liquid Handling.png"
   ],
-  coverProductImage: "/images/products/pumps-1.jpeg",
+  coverProductImage: "/images/products/10.Pumps, Tanks & Liquid Handling.png",
   bullets: [
     "Centrifugal pumps including end-suction, inline, split-case and multistage configurations.",
     "Submersible pumps for drainage, sewage, wastewater, borehole and deep-well applications.",
@@ -2191,11 +2191,11 @@ If you don’t see your exact pump type listed, share the existing model, duty p
   heroNote:
     "High-accuracy testing, inspection and diagnostic instruments for field technicians, HVAC teams, electricians, inspectors and maintenance engineers — delivered across UAE & GCC.",
   images: [
-    "/images/products/testing-1.jpeg",
-    "/images/products/testing-2.jpeg",
-    "/images/products/testing-3.jpeg"
+    "/images/products/18. Testing, Inspection & Diagnostics.png",
+    "/images/products/18. Testing, Inspection & Diagnostics.png",
+    "/images/products/18. Testing, Inspection & Diagnostics.png"
   ],
-  coverProductImage: "/images/products/testing-1.jpeg",
+  coverProductImage: "/images/products/18A. Testing, Inspection & Diagnostics.png",
   bullets: [
     "Digital multimeters, clamp meters, insulation testers and electrical measurement devices.",
     "Pressure gauges, differential gauges, manometers, test pumps and flow meters.",
@@ -2313,11 +2313,11 @@ Just send us the details, part number, or a photo of what you need, and we’ll 
   heroNote:
     "Professional-grade tools and machining equipment sourced from trusted global manufacturers — ideal for fabrication, maintenance, construction, oil & gas, and industrial workshops.",
   images: [
-    "/images/products/tools-1.jpeg",
-    "/images/products/tools-2.jpeg",
-    "/images/products/tools-3.jpeg"
+    "/images/products/1. Tools, Machining & Workshop Equipment.png",
+    "/images/products/1. Tools, Machining & Workshop Equipment.png",
+    "/images/products/1. Tools, Machining & Workshop Equipment.png"
   ],
-  coverProductImage: "/images/products/tools-1.jpeg",
+  coverProductImage: "/images/products/1A. Tools, Machining & Workshop Equipment.png",
   bullets: [
     "Hand tools including wrenches, screwdrivers, pliers, hammers, sockets and precision tool sets.",
     "Power tools such as drills, grinders, saws, heat guns, rotary tools and complete accessory kits.",
@@ -2599,11 +2599,11 @@ Share the part number, specs, or a photo—and we will source it promptly with d
   heroNote:
     "High-quality, certified valves and flow-control solutions for pipelines, water systems, oil & gas, HVAC, firefighting and marine applications — sourced from global manufacturers and delivered across UAE & GCC.",
   images: [
-    "/images/products/valves-1.jpeg",
-    "/images/products/valves-2.jpeg",
-    "/images/products/valves-3.jpeg"
+    "/images/products/Valves 1.png",
+    "/images/products/Valves 2.png",
+    "/images/products/Valves 3.png"
   ],
-  coverProductImage: "/images/products/valves-1.jpeg",
+  coverProductImage: "/images/products/Types of valves.jpeg",
   bullets: [
     "Comprehensive range of industrial valves including ball, gate, globe, check, butterfly, diaphragm, safety and control valves.",
     "Valve solutions for water networks, oil & gas pipelines, HVAC systems, firefighting lines, marine services and industrial plants.",
@@ -2754,11 +2754,11 @@ If the required valve isn’t listed, simply provide the part number, specificat
   heroNote:
     "Complete welding, brazing and heat-joining solutions — from machines and consumables to torches, safety gear and thermal tools, delivered across UAE & GCC.",
   images: [
-    "/images/products/welding-1.jpeg",
-    "/images/products/welding-2.jpeg",
-    "/images/products/welding-3.jpeg"
+    "/images/products/17. Welding, Brazing & Heat Joining.png",
+    "/images/products/17. Welding, Brazing & Heat Joining.png",
+    "/images/products/17. Welding, Brazing & Heat Joining.png"
   ],
-  coverProductImage: "/images/products/welding-1.jpeg",
+  coverProductImage: "/images/products/17A. Welding, Brazing & Heat Joining.png",
   bullets: [
     "Welding machines including MIG, TIG, Stick, multi-process and industrial inverter welders.",
     "Welding consumables such as electrodes, MIG wire, TIG filler rods and alloy wires.",
