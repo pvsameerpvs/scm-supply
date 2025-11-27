@@ -20,6 +20,9 @@ export const metadata = {
 export default function ProductsIndexPage() {
   return (
     <div className="relative bg-white">
+      {/* TOP FULL-WIDTH YELLOW LINE */}
+      <div className="w-full h-1.5 bg-[#f7c948]" />
+
       {/* YELLOW WAVES — PAGE BG STILL WHITE */}
       <div className="pointer-events-none absolute inset-x-0 -top-36 -z-10 overflow-hidden">
         <div className="mx-auto h-44 w-[140%] rounded-[100%] bg-[#f7c948]/45 opacity-70 blur-3xl" />
@@ -32,7 +35,7 @@ export default function ProductsIndexPage() {
       <div className="container py-10 md:py-14 space-y-8">
         <header className="space-y-4 max-w-3xl">
           <p className="text-xs font-semibold tracking-[0.25em] uppercase text-amber-500">
-            Product & Catalogs
+            Product &amp; Catalogs
           </p>
           <h1 className="text-3xl md:text-4xl font-semibold leading-tight text-slate-900">
             Product Categories
@@ -57,7 +60,7 @@ export default function ProductsIndexPage() {
             <Link href="/contact">
               <Button
                 size="sm"
-                className="bg-[#f7c948] text-slate-900 border border-[#f7c948] hover:bg-[#f7c948]/90 hover:text-slate-900 shadow-sm"
+                className="w-full md:w-auto bg-[#f7c948] text-slate-900 border border-[#f7c948] hover:bg-[#f7c948]/90 hover:text-slate-900 shadow-sm"
               >
                 Send RFQ
               </Button>
@@ -120,6 +123,9 @@ export default function ProductsIndexPage() {
           </div>
         </section>
       </div>
+
+      {/* BOTTOM FULL-WIDTH YELLOW LINE */}
+      <div className="w-full h-1.5 bg-[#f7c948]" />
     </div>
   );
 }

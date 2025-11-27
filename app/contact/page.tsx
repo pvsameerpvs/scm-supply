@@ -7,6 +7,8 @@ export const metadata = {
 export default function ContactPage() {
   return (
     <div className="relative bg-white">
+      {/* 🔶 FULL-WIDTH TOP YELLOW LINE */}
+      <div className="w-full h-1.5 bg-[#f7c948]" />
       {/* THEME YELLOW WAVES IN BACKGROUND – PAGE BG STAYS WHITE */}
       <div className="pointer-events-none absolute inset-x-0 -top-36 -z-10 overflow-hidden">
         <div className="mx-auto h-44 w-[140%] rounded-[100%] bg-[#f7c948]/45 opacity-70 blur-3xl" />
@@ -236,6 +238,7 @@ export default function ContactPage() {
           </div>
         </section>
       </div>
+      <div className="w-full h-1.5 bg-[#f7c948]" />
     </div>
   );
 }
