@@ -97,24 +97,34 @@ export function IndustrialBrandsSection({
       </div>
 
       {/* Brand details modal */}
+      {/* Brand details modal */}
       <Dialog
         open={!!selectedBrand}
         onOpenChange={(open) => !open && setSelectedBrand(null)}
       >
-        <DialogContent>
+        <DialogContent
+          className="
+      max-w-xs sm:max-w-md 
+      rounded-2xl 
+      p-4 sm:p-6 
+      border border-slate-200
+    "
+        >
           <DialogHeader>
-            <DialogTitle>{selectedBrand}</DialogTitle>
-            <DialogDescription>
+            <DialogTitle className="text-base sm:text-lg">
+              {selectedBrand}
+            </DialogTitle>
+            <DialogDescription className="text-xs sm:text-sm">
               Leading industrial manufacturer supplied by SCM Supply FZCO into
               UAE &amp; GCC.
             </DialogDescription>
           </DialogHeader>
 
           {selectedBrand && (
-            <div className="space-y-4 text-sm text-slate-700">
+            <div className="space-y-4 text-xs sm:text-sm text-slate-700">
               <p>{selectedDescription}</p>
 
-              <p className="text-xs text-slate-500">
+              <p className="text-[11px] sm:text-xs text-slate-500">
                 Tip: you can send us your part list, photos of labels or an
                 existing quote from another supplier and we will match or offer
                 alternatives.
@@ -126,7 +136,7 @@ export function IndustrialBrandsSection({
                     href={whatsappUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center rounded-md px-3 py-1.5 text-sm font-medium bg-amber-400 text-slate-900 hover:bg-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-400"
+                    className="inline-flex items-center rounded-md px-3 py-1.5 text-xs sm:text-sm font-medium bg-amber-400 text-slate-900 hover:bg-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-400"
                   >
                     More info via WhatsApp
                   </a>
