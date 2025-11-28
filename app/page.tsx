@@ -4,6 +4,8 @@ import FeaturedProductsSection from "@/components/home/FeaturedProductsSection";
 import HelpCtaSection from "@/components/home/HelpCtaSection";
 import AboutPage from "./about/page";
 import WhyChooseUsStepper from "@/components/WhyChooseUsStepper";
+import IndustrialComponentsPage from "./industrial-components/page";
+import IndustrialComponentsSection from "@/components/industrial/IndustrialComponentsSection";
 
 export default function HomePage() {
   return (
@@ -14,6 +16,7 @@ export default function HomePage() {
       {/* Container for the rest */}
       <div className=" py-10 md:py-14 space-y-12">
         <AboutPage />
+        <IndustrialComponentsSection />
         <IndustriesAndWhySection />
         <FeaturedProductsSection />
         <WhyChooseUsStepper />

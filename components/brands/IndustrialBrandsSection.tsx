@@ -2,9 +2,10 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import Image from "next/image";
+import type { IndustrialBrand } from "@/data/brands";
 import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
 import {
   Dialog,
   DialogContent,
@@ -13,134 +14,142 @@ import {
   DialogDescription,
 } from "@/components/ui/dialog";
 
-type IndustrialBrandsSectionProps = {
-  brandNames: string[];
+type Props = {
+  brands: IndustrialBrand[];
 };
 
-export function IndustrialBrandsSection({
-  brandNames,
-}: IndustrialBrandsSectionProps) {
+export function IndustrialBrandsSection({ brands }: Props) {
   const [query, setQuery] = useState("");
-  const [selectedBrand, setSelectedBrand] = useState<string | null>(null);
+  const [selectedBrand, setSelectedBrand] = useState<IndustrialBrand | null>(
+    null
+  );
 
   const filtered = useMemo(() => {
-    if (!query.trim()) return brandNames;
+    if (!query.trim()) return brands;
     const q = query.toLowerCase();
-    return brandNames.filter((name) => name.toLowerCase().includes(q));
-  }, [brandNames, query]);
+    return brands.filter((b) => b.name.toLowerCase().includes(q));
+  }, [brands, query]);
 
-  const whatsappNumber = "0000000000"; // TODO: replace with your WhatsApp number (digits only, no +)
-
-  const selectedDescription = selectedBrand
-    ? `SCM Supply FZCO sources genuine ${selectedBrand} products for projects and maintenance teams across UAE & GCC. Share your part numbers, bill-of-materials or application details and we will support with sourcing, pricing and delivery options.`
-    : "";
+  const whatsappNumber = "0000000000"; // TODO: replace with your WhatsApp number
 
   const whatsappUrl =
     selectedBrand &&
     `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
-      `Hello, I would like more information and pricing for ${selectedBrand} products for our operations in UAE/GCC.`
+      `Hello, I would like more information and pricing for ${selectedBrand.name} products for our operations in UAE/GCC.`
     )}`;
 
   return (
-    <section className="space-y-4">
-      <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-3">
+    <section className="space-y-5">
+      {/* Header */}
+      <div className="flex flex-col md:flex-row justify-between gap-3">
         <div>
           <h2 className="text-xl md:text-2xl font-semibold text-slate-900">
             Leading Industrial Brands We Supply in UAE
           </h2>
-          <p className="text-sm md:text-base text-slate-600 max-w-2xl">
-            Below is a selection of commonly requested brands we support for
-            tools, safety, instrumentation, electrical, hydraulics, valves,
-            maintenance and general industrial supply into UAE &amp; GCC.
+          <p className="text-sm text-slate-600 max-w-2xl">
+            Tools · Safety · Electrical · Instrumentation · Hydraulics · Valves
+            · MRO
           </p>
         </div>
 
-        <div className="flex flex-col items-stretch gap-2 md:items-end">
-          <Badge className="self-start md:self-end bg-amber-500 text-slate-900 hover:bg-amber-400">
+        <div className="flex flex-col gap-2 md:items-end">
+          <Badge className="bg-amber-500 text-slate-900 hover:bg-amber-400">
             UAE &amp; GCC Supply
           </Badge>
+
           <Input
             placeholder="Search brand name…"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            className="w-full md:w-64 text-sm"
+            className="w-full md:w-64"
           />
         </div>
       </div>
 
-      <div className="bg-white border border-slate-200 rounded-2xl p-4 md:p-6">
+      {/* Brand Grid */}
+      <div className="bg-white border rounded-2xl p-4 md:p-6">
         {filtered.length === 0 ? (
-          <p className="text-sm text-slate-500">
-            No brands matched{" "}
-            <span className="font-medium text-slate-700">
-              &quot;{query}&quot;
-            </span>
-            . Try a different name.
-          </p>
+          <p className="text-slate-500 text-sm">No results found.</p>
         ) : (
-          <div className="grid gap-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-            {filtered.map((name) => (
+          <div className="grid gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
+            {filtered.map((brand) => (
               <button
-                key={name}
+                key={brand.slug}
                 type="button"
-                onClick={() => setSelectedBrand(name)}
-                className="flex items-center justify-between rounded-xl border border-slate-200/80 bg-slate-50/60 px-3 py-2 md:px-4 md:py-2.5 text-left hover:border-amber-400 hover:bg-amber-50 transition-colors"
+                onClick={() => setSelectedBrand(brand)}
+                className="
+            flex items-center gap-3
+            rounded-xl border bg-slate-50
+            px-3 py-3
+            hover:border-amber-400 hover:bg-amber-50
+            transition
+          "
               >
+                {brand.logo && (
+                  <div className="relative h-8 w-8">
+                    <Image
+                      src={brand.logo}
+                      alt={brand.name}
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
+                )}
+
                 <span className="text-sm font-medium text-slate-800">
-                  {name}
+                  {brand.name}
                 </span>
-                <span className="h-2 w-2 rounded-full bg-amber-400" />
               </button>
             ))}
           </div>
         )}
       </div>
 
-      {/* Brand details modal */}
-      {/* Brand details modal */}
+      {/* Modal */}
       <Dialog
         open={!!selectedBrand}
         onOpenChange={(open) => !open && setSelectedBrand(null)}
       >
-        <DialogContent
-          className="
-      max-w-xs sm:max-w-md 
-      rounded-2xl 
-      p-4 sm:p-6 
-      border border-slate-200
-    "
-        >
+        <DialogContent className="rounded-2xl p-6 border">
           <DialogHeader>
-            <DialogTitle className="text-base sm:text-lg">
-              {selectedBrand}
-            </DialogTitle>
-            <DialogDescription className="text-xs sm:text-sm">
-              Leading industrial manufacturer supplied by SCM Supply FZCO into
-              UAE &amp; GCC.
-            </DialogDescription>
+            <div className="flex items-center gap-3">
+              {selectedBrand?.logo && (
+                <div className="relative h-10 w-10">
+                  <Image
+                    src={selectedBrand.logo}
+                    alt={selectedBrand.name}
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+              )}
+
+              <div>
+                <DialogTitle>{selectedBrand?.name}</DialogTitle>
+                <DialogDescription>
+                  Genuine industrial brand supplied by SCM Supply FZCO.
+                </DialogDescription>
+              </div>
+            </div>
           </DialogHeader>
 
           {selectedBrand && (
-            <div className="space-y-4 text-xs sm:text-sm text-slate-700">
-              <p>{selectedDescription}</p>
-
-              <p className="text-[11px] sm:text-xs text-slate-500">
-                Tip: you can send us your part list, photos of labels or an
-                existing quote from another supplier and we will match or offer
-                alternatives.
+            <div className="space-y-4 text-sm text-slate-700">
+              <p>
+                SCM Supply FZCO supplies genuine {selectedBrand.name} products
+                into UAE &amp; GCC. Share your part numbers or BOM and we will
+                support with sourcing & pricing.
               </p>
 
               <div className="flex justify-end">
-                {whatsappUrl && (
-                  <a
-                    href={whatsappUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center rounded-md px-3 py-1.5 text-xs sm:text-sm font-medium bg-amber-400 text-slate-900 hover:bg-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-400"
-                  >
-                    More info via WhatsApp
-                  </a>
-                )}
+                <a
+                  href={whatsappUrl!}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-3 py-1.5 text-sm rounded-md bg-amber-400 text-slate-900 hover:bg-amber-300"
+                >
+                  WhatsApp Us
+                </a>
               </div>
             </div>
           )}

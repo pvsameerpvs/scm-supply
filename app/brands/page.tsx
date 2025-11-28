@@ -1,7 +1,7 @@
 // app/brands/page.tsx
 
 import Image from "next/image";
-import { brands, industrialBrandNames } from "@/data/brands";
+import { brands, industrialBrands } from "@/data/brands";
 import {
   Card,
   CardContent,
@@ -24,6 +24,7 @@ const brandLogos: Record<string, string> = {
   "mcmaster-carr": "/McMaster-Carr.png",
   uline: "/uline.png",
 };
+
 const brandColors: Record<string, string> = {
   "mcmaster-carr": "#2E5A2C", // Dark green
   grainger: "#C8102E", // Red
@@ -64,11 +65,11 @@ export default function BrandsPage() {
               <Card
                 key={brand.slug}
                 className="
-    h-full overflow-hidden shadow-sm hover:shadow-md transition
-    relative
-    before:content-[''] before:absolute before:top-0 before:left-0
-    before:h-1 before:w-full before:bg-[#f7c948]
-  "
+                  h-full overflow-hidden shadow-sm hover:shadow-md transition
+                  relative
+                  before:content-[''] before:absolute before:top-0 before:left-0
+                  before:h-1 before:w-full before:bg-[#f7c948]
+                "
                 style={{
                   background: `linear-gradient(140deg, ${bg} 0%, ${bg}E6 85%)`,
                 }}
@@ -113,7 +114,7 @@ export default function BrandsPage() {
         </div>
 
         {/* INDUSTRIAL BRANDS */}
-        <IndustrialBrandsSection brandNames={industrialBrandNames} />
+        <IndustrialBrandsSection brands={industrialBrands} />
 
         {/* CTA BOX */}
         <section className="bg-slate-900/5 border border-slate-200 rounded-2xl p-6 md:p-7 text-sm md:text-base text-slate-700 space-y-3">
