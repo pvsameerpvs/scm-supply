@@ -9,22 +9,83 @@ import { anton } from "@/app/fonts";
 // Background slideshow images
 const heroImages = [
   "/hero1.jpg",
+  "/hero6.jpg",
+  "/hero7.jpg",
+  "/hero8.jpg",
+  "/hero9.jpg",
+  "/hero10.jpg",
   "/hero2.jpg",
   "/hero3.jpg",
   "/hero4.jpg",
   "/hero5.jpg",
 ];
 
+// Text to type
+const TYPING_LINES = ["Industrial", "Procurement", "& Logistics"];
+
 export default function HeroSection() {
   const [index, setIndex] = useState(0);
 
+  // Typing state (TS typed)
+  const [displayedLines, setDisplayedLines] = useState<string[]>(["", "", ""]);
+  const [typingDone, setTypingDone] = useState(false);
+
   // Auto-slide every 10 seconds
   useEffect(() => {
-    const interval = setInterval(
-      () => setIndex((prev) => (prev + 1) % heroImages.length),
-      10000
-    );
-    return () => clearInterval(interval);
+    const intervalId = window.setInterval(() => {
+      setIndex((prev) => (prev + 1) % heroImages.length);
+    }, 10000);
+
+    return () => clearInterval(intervalId);
+  }, []);
+
+  // Typing animation for "Industrial / Procurement / & Logistics"
+  useEffect(() => {
+    let lineIndex = 0;
+    let charIndex = 0;
+
+    const type = () => {
+      lineIndex = 0;
+      charIndex = 0;
+      setDisplayedLines(["", "", ""]);
+      setTypingDone(false);
+
+      const typingInterval = setInterval(() => {
+        // Stop if beyond the last line
+        if (lineIndex >= TYPING_LINES.length) {
+          clearInterval(typingInterval);
+          setTypingDone(true);
+          return;
+        }
+
+        setDisplayedLines((prev) => {
+          const next = [...prev];
+          const currentLine = TYPING_LINES[lineIndex];
+
+          if (!currentLine) return prev;
+
+          next[lineIndex] = currentLine.slice(0, charIndex + 1);
+          return next;
+        });
+
+        charIndex++;
+
+        if (charIndex >= TYPING_LINES[lineIndex].length) {
+          lineIndex++;
+          charIndex = 0;
+        }
+      }, 70); // typing speed
+    };
+
+    // run typing immediately
+    type();
+
+    // 🔁 repeat typing every 5 seconds
+    const loopInterval = setInterval(() => {
+      type();
+    }, 5000);
+
+    return () => clearInterval(loopInterval);
   }, []);
 
   return (
@@ -65,25 +126,29 @@ export default function HeroSection() {
             &amp; Asia.
           </p>
 
-          {/* INDUSTRIAL PROCUREMENT & LOGISTICS – ANTON STYLE */}
+          {/* INDUSTRIAL PROCUREMENT & LOGISTICS – TYPING + BLINKING CURSOR */}
           <div
             className={`
-  ${anton.className}
-  mt-4
-  text-yellow-300
-  leading-[0.9]
-  text-4xl sm:text-5xl md:text-6xl lg:text-[80px] xl:text-[100px]
-  text-right
-  md:absolute
-  md:left-1/2
-  md:top-1/2
-  md:-translate-x-[38%]   /* 👈 moved left for desktop */
-  md:-translate-y-1/2
-`}
+              ${anton.className}
+              mt-4
+              text-yellow-300
+              leading-[0.9]
+              text-4xl sm:text-5xl md:text-6xl lg:text-[80px] xl:text-[100px]
+              text-right
+              md:absolute
+              md:left-1/2
+              md:top-1/2
+              md:-translate-x-[38%]
+              md:-translate-y-1/2
+            `}
           >
-            <p className="font-black uppercase">Industrial</p>
-            <p className="font-black uppercase">Procurement</p>
-            <p className="font-black uppercase">&amp; Logistics</p>
+            <p className="font-black uppercase">{displayedLines[0]}</p>
+            <p className="font-black uppercase">{displayedLines[1]}</p>
+            <p className="font-black uppercase typing-cursor">
+              {displayedLines[2]}
+              {/* cursor while typing */}
+              {!typingDone && <span>&nbsp;</span>}
+            </p>
           </div>
 
           <div className="flex flex-wrap gap-3 mt-6 md:mt-4">
