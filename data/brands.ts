@@ -18,34 +18,37 @@ export type IndustrialBrand = {
   logo?: string;
 };
 
-export const brands: Brand[] = [
-  {
-    name: "Grainger",
-    slug: "grainger",
-    region: "USA",
-    focus: "MRO, tools, safety, facility supplies",
-    description:
-      "SCM Supply FZCO consolidates and ships Grainger catalog items from USA into UAE & GCC, supporting tools, MRO, HVAC, electrical, plumbing and facility products.",
-  },
-  {
-    name: "McMaster-Carr",
-    slug: "mcmaster-carr",
-    region: "USA",
-    focus: "Hardware, fasteners, motion components & tools",
-    description:
-      "Engineering teams rely on McMaster-Carr for hardware, fasteners, linear motion, tools and more. SCM Supply FZCO sources, consolidates and exports to UAE, Middle East & Africa.",
-  },
-  {
-    name: "Uline",
-    slug: "uline",
-    region: "USA",
-    focus: "Packaging, shipping, warehouse & material handling",
-    description:
-      "For packaging, warehouse and shipping supplies, SCM Supply FZCO brings Uline products into UAE & GCC, ideal for logistics, warehousing and distribution operations.",
-  },
-];
+// export const brands: Brand[] = [
+//   {
+//     name: "Grainger",
+//     slug: "grainger",
+//     region: "USA",
+//     focus: "MRO, tools, safety, facility supplies",
+//     description:
+//       "SCM Supply FZCO consolidates and ships Grainger catalog items from USA into UAE & GCC, supporting tools, MRO, HVAC, electrical, plumbing and facility products.",
+//   },
+//   {
+//     name: "McMaster-Carr",
+//     slug: "mcmaster-carr",
+//     region: "USA",
+//     focus: "Hardware, fasteners, motion components & tools",
+//     description:
+//       "Engineering teams rely on McMaster-Carr for hardware, fasteners, linear motion, tools and more. SCM Supply FZCO sources, consolidates and exports to UAE, Middle East & Africa.",
+//   },
+//   {
+//     name: "Uline",
+//     slug: "uline",
+//     region: "USA",
+//     focus: "Packaging, shipping, warehouse & material handling",
+//     description:
+//       "For packaging, warehouse and shipping supplies, SCM Supply FZCO brings Uline products into UAE & GCC, ideal for logistics, warehousing and distribution operations.",
+//   },
+// ];
 
 export const industrialBrands: IndustrialBrand[] = [
+ { name: "Grainger", slug: "grainger", logo: "/grainger.png" },
+  { name: "McMaster-Carr", slug: "mcmaster-carr", logo: "/McMaster-Carr.png" },
+   { name: "Uline", slug: "uline", logo: "/uline.png" },
   { name: "3M", slug: "3m", logo: "/3M-Logo.png" },
   { name: "ABB", slug: "abb", logo: "/ABB-logo.png" },
   { name: "Aeroquip", slug: "aeroquip", logo: "/Aeroquip-Danfoss Logo.png" },

@@ -1,15 +1,7 @@
 // app/brands/page.tsx
 
 import Image from "next/image";
-import { brands, industrialBrands } from "@/data/brands";
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-  CardDescription,
-} from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import { industrialBrands } from "@/data/brands";
 import { IndustrialBrandsSection } from "@/components/brands/IndustrialBrandsSection";
 
 export const metadata = {
@@ -18,101 +10,49 @@ export const metadata = {
     "Overview of key brands and catalogs SCM Supply FZCO sources from, including Grainger, McMaster-Carr, Uline and leading industrial manufacturers supplied across UAE and GCC.",
 };
 
-// Optional logo paths for the main catalog brands
-const brandLogos: Record<string, string> = {
-  grainger: "/grainger.png",
-  "mcmaster-carr": "/McMaster-Carr.png",
-  uline: "/uline.png",
-};
-
-const brandColors: Record<string, string> = {
-  "mcmaster-carr": "#2E5A2C", // Dark green
-  grainger: "#C8102E", // Red
-  uline: "#00509E", // Blue
-};
-
 export default function BrandsPage() {
   return (
     <>
+      {/* ⭐ FULL-WIDTH HERO WITH BACKGROUND IMAGE */}
+      <section className="relative w-full min-h-[260px] sm:min-h-[320px] md:min-h-[380px] lg:min-h-[420px] flex items-center justify-center overflow-hidden">
+        {/* BG IMAGE */}
+        <Image
+          src="/product-bg.jpg" // <-- your background image
+          alt="Brands background"
+          fill
+          className="object-cover object-center"
+          priority
+        />
+
+        {/* Dark overlay (optional but recommended) */}
+        <div className="absolute inset-0 bg-black/40" />
+
+        {/* HERO CONTENT */}
+        <div className="relative w-full">
+          <div className="container py-5 md:py-5">
+            <div className="space-y-4 max-w-3xl">
+              <p className="text-xs font-semibold tracking-[0.25em] uppercase text-amber-400">
+                Brands & Catalogs
+              </p>
+
+              <h1 className="text-3xl md:text-4xl font-semibold leading-tight text-white">
+                Brands &amp; Catalog Sourcing
+              </h1>
+
+              <p className="text-base md:text-lg text-gray-200 max-w-xl">
+                SCM Supply FZCO works with hundreds of manufacturers, OEMs, and
+                distributors worldwide including Grainger, McMaster-Carr, and
+                Uline shipping across UAE, GCC and global regions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Yellow top line */}
       <div className="w-full h-1.5 bg-[#f7c948]" />
 
       <div className="container py-10 md:py-14 space-y-10">
-        {/* HEADER */}
-        <header className="space-y-4 max-w-3xl">
-          <p className="text-xs font-semibold tracking-[0.25em] uppercase text-amber-500">
-            Brands & Catalogs
-          </p>
-          <h1 className="text-3xl md:text-4xl font-semibold leading-tight text-slate-900">
-            Brands &amp; Catalog Sourcing
-          </h1>
-          <p className="text-base md:text-lg text-slate-600">
-            SCM Supply FZCO works with hundreds of global manufacturers, OEMs
-            and distributors. For US catalog sourcing, we support full-range
-            access to major brands such as Grainger, McMaster-Carr and Uline,
-            consolidating purchases into export-ready shipments for UAE, GCC and
-            wider regions.
-          </p>
-        </header>
-
-        {/* FEATURED CATALOG BRANDS */}
-        <div className="grid gap-6 md:grid-cols-3">
-          {brands.map((brand) => {
-            const logo = brandLogos[brand.slug];
-            const bg = brandColors[brand.slug] || "#f8fafc";
-
-            return (
-              <Card
-                key={brand.slug}
-                className="
-                  h-full overflow-hidden shadow-sm hover:shadow-md transition
-                  relative
-                  before:content-[''] before:absolute before:top-0 before:left-0
-                  before:h-1 before:w-full before:bg-[#f7c948]
-                "
-                style={{
-                  background: `linear-gradient(140deg, ${bg} 0%, ${bg}E6 85%)`,
-                }}
-              >
-                <CardHeader className="space-y-4">
-                  <div className="flex items-center justify-between gap-3">
-                    <CardTitle className="text-lg font-semibold text-white">
-                      {brand.name}
-                    </CardTitle>
-                    <Badge
-                      variant="outline"
-                      className="text-white border-white"
-                    >
-                      {brand.region}
-                    </Badge>
-                  </div>
-
-                  {logo && (
-                    <div className="relative h-12 w-32">
-                      <Image
-                        src={logo}
-                        alt={brand.name}
-                        fill
-                        className="object-contain"
-                      />
-                    </div>
-                  )}
-
-                  <CardDescription className="text-white/80">
-                    {brand.focus}
-                  </CardDescription>
-                </CardHeader>
-
-                <CardContent>
-                  <p className="text-sm text-white/90 leading-relaxed">
-                    {brand.description}
-                  </p>
-                </CardContent>
-              </Card>
-            );
-          })}
-        </div>
-
         {/* INDUSTRIAL BRANDS */}
         <IndustrialBrandsSection brands={industrialBrands} />
 
@@ -122,10 +62,9 @@ export default function BrandsPage() {
             Can&apos;t Find a Specific Brand Listed?
           </h2>
           <p>
-            We regularly add new brands and OEMs based on project requirements.
-            If you have a preferred manufacturer or an existing
-            bill-of-materials from another supplier, share the details with our
-            team and we will source, consolidate and ship to your location.
+            We regularly add new brands based on your requirements. Share your
+            manufacturer list or BOM and we will source, consolidate and ship to
+            your destination.
           </p>
         </section>
       </div>
