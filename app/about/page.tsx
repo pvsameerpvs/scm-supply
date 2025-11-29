@@ -1,5 +1,6 @@
 // app/about/page.tsx
 import { AboutHero } from "@/components/about/AboutHero";
+import { AboutLogisticsValue } from "@/components/about/AboutLogisticsValue";
 import { AboutPillars } from "@/components/about/AboutPillars";
 import { AboutServicesValue } from "@/components/about/AboutServicesValue";
 import { Metadata } from "next";
@@ -36,6 +37,7 @@ export default function AboutPage() {
       <div className="container relative py-16 md:py-24 space-y-16">
         <AboutHero />
         <AboutServicesValue />
+        <AboutLogisticsValue />
         <AboutPillars />
       </div>
     </div>

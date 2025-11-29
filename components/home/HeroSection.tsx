@@ -8,25 +8,26 @@ import { anton } from "@/app/fonts";
 
 // Background slideshow images
 const heroImages = [
-  "/hero1.jpg",
-  "/hero6.jpg",
-  "/hero7.jpg",
-  "/hero8.jpg",
-  "/hero9.jpg",
-  "/hero10.jpg",
-  "/hero2.jpg",
-  "/hero3.jpg",
-  "/hero4.jpg",
-  "/hero5.jpg",
+  "/hero-change8.jpeg",
+  "/hero-change1.jpeg",
+  "/hero-change2.jpeg",
+  "/hero-change3.jpeg",
+  "/hero-change4.jpeg",
+  "/hero-change5.jpeg",
+  "/hero-change6.jpeg",
+  "/hero-change7.jpeg",
+  "/hero-motor2.jpg",
+  "/hero-motor3.jpg",
+  "/hero-motor4.jpg",
 ];
 
 // Text to type
-const TYPING_LINES = ["Industrial", "Procurement", "& Logistics"];
+const TYPING_LINES = ["Smart Procurement", "Fast Logistics", "Global Coverage"];
 
 export default function HeroSection() {
   const [index, setIndex] = useState(0);
 
-  // Typing state (TS typed)
+  // Typing state
   const [displayedLines, setDisplayedLines] = useState<string[]>(["", "", ""]);
   const [typingDone, setTypingDone] = useState(false);
 
@@ -36,24 +37,28 @@ export default function HeroSection() {
       setIndex((prev) => (prev + 1) % heroImages.length);
     }, 10000);
 
-    return () => clearInterval(intervalId);
+    return () => window.clearInterval(intervalId);
   }, []);
 
   // Typing animation for "Industrial / Procurement / & Logistics"
   useEffect(() => {
     let lineIndex = 0;
     let charIndex = 0;
+    let typingIntervalId: number | undefined;
 
-    const type = () => {
+    const startTyping = () => {
       lineIndex = 0;
       charIndex = 0;
       setDisplayedLines(["", "", ""]);
       setTypingDone(false);
 
-      const typingInterval = setInterval(() => {
-        // Stop if beyond the last line
+      if (typingIntervalId) {
+        window.clearInterval(typingIntervalId);
+      }
+
+      typingIntervalId = window.setInterval(() => {
         if (lineIndex >= TYPING_LINES.length) {
-          clearInterval(typingInterval);
+          if (typingIntervalId) window.clearInterval(typingIntervalId);
           setTypingDone(true);
           return;
         }
@@ -74,18 +79,21 @@ export default function HeroSection() {
           lineIndex++;
           charIndex = 0;
         }
-      }, 70); // typing speed
+      }, 70);
     };
 
     // run typing immediately
-    type();
+    startTyping();
 
-    // 🔁 repeat typing every 5 seconds
-    const loopInterval = setInterval(() => {
-      type();
+    // repeat typing every 5 seconds
+    const loopIntervalId = window.setInterval(() => {
+      startTyping();
     }, 5000);
 
-    return () => clearInterval(loopInterval);
+    return () => {
+      if (typingIntervalId) window.clearInterval(typingIntervalId);
+      window.clearInterval(loopIntervalId);
+    };
   }, []);
 
   return (
@@ -114,44 +122,43 @@ export default function HeroSection() {
 
       {/* MAIN CONTENT */}
       <div className="relative z-20 grid md:grid-cols-2 min-h-[calc(100vh-64px)]">
-        {/* LEFT SIDE TEXT */}
-        <div className="relative flex flex-col justify-end p-6 sm:p-8 gap-3">
-          <p className="text-xs tracking-[0.28em] uppercase text-yellow-400">
-            SCM Supply FZCO
-          </p>
+        {/* LEFT SIDE TEXT – CLEAN, CENTERED, NO ABSOLUTE POSITIONING */}
+        {/* LEFT SIDE TEXT – TOP / MIDDLE / BOTTOM LAYOUT */}
+        <div className="relative flex flex-col justify-between p-6 sm:p-8">
+          {/* 🔼 TOP LEFT CONTENT */}
+          <div className="flex flex-col gap-3">
+            <p className="text-xs tracking-[0.28em] uppercase text-yellow-400">
+              SCM Supply FZCO
+            </p>
 
-          <p className="max-w-md text-sm sm:text-base text-slate-100">
-            Strategic partner for industrial procurement, MRO, tools, oil &amp;
-            gas spares and logistics – serving UAE, GCC, USA, Europe, Africa
-            &amp; Asia.
-          </p>
+            <p className="max-w-md text-sm sm:text-base text-slate-100">
+              Strategic partner for industrial procurement, MRO, tools, oil
+              &amp; gas spares and logistics – serving UAE, GCC, USA, Europe,
+              Africa &amp; Asia.
+            </p>
+          </div>
 
-          {/* INDUSTRIAL PROCUREMENT & LOGISTICS – TYPING + BLINKING CURSOR */}
+          {/* ⬆️⬇️ MIDDLE LEFT – TYPING TEXT */}
           <div
             className={`
-              ${anton.className}
-              mt-4
-              text-yellow-300
-              leading-[0.9]
-              text-4xl sm:text-5xl md:text-6xl lg:text-[80px] xl:text-[100px]
-              text-right
-              md:absolute
-              md:left-1/2
-              md:top-1/2
-              md:-translate-x-[38%]
-              md:-translate-y-1/2
-            `}
+      ${anton.className}
+      text-yellow-300
+      leading-tight
+      text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl
+      mt-6 mb-6
+      h-[4.5rem] sm:h-[5.5rem] md:h-[6.5rem] lg:h-[7.5rem]
+    `}
           >
             <p className="font-black uppercase">{displayedLines[0]}</p>
             <p className="font-black uppercase">{displayedLines[1]}</p>
             <p className="font-black uppercase typing-cursor">
               {displayedLines[2]}
-              {/* cursor while typing */}
               {!typingDone && <span>&nbsp;</span>}
             </p>
           </div>
 
-          <div className="flex flex-wrap gap-3 mt-6 md:mt-4">
+          {/* 🔽 BOTTOM LEFT – BUTTONS */}
+          <div className="flex flex-wrap gap-3 mt-4">
             <Link href="/contact">
               <Button
                 size="sm"
@@ -173,70 +180,30 @@ export default function HeroSection() {
           </div>
         </div>
 
-        {/* RIGHT PANEL */}
-        <div className="relative bg-[#f7c948] text-slate-900 flex py-8 px-4 sm:px-6 md:px-10 overflow-hidden">
-          {/* INDUSTRY TEXT — FIXED IMAGE + BOLD + TIGHT */}
-          <div
-            className={`
-              leading-[0.85] uppercase 
-              text-5xl sm:text-6xl md:text-7xl lg:text-[180px] xl:text-[220px]
-              pointer-events-none
-              w-full md:w-auto
-              text-center md:text-left
-              mb-8 md:mb-0
-              md:absolute md:left-1 lg:-left-4 md:top-1/2 md:-translate-y-1/2
-              industry-mask
-            `}
-            style={{
-              backgroundImage: `
-                linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
-                url(${heroImages[index]})
-              `,
-              backgroundPosition: "center",
-              backgroundSize: "cover",
-            }}
-          >
-            <span
-              className={`${anton.className} font-black tracking-[-0.04em] block`}
-            >
-              IN
-            </span>
-            <span
-              className={`${anton.className} font-black tracking-[-0.04em] block`}
-            >
-              DUS
-            </span>
-            <span
-              className={`${anton.className} font-black tracking-[-0.04em] block`}
-            >
-              TRY
-            </span>
+        {/* RIGHT PANEL – NO YELLOW BG, TOP + BOTTOM CONTENT */}
+        <div className="relative flex flex-col justify-between py-8 px-4 sm:px-6 md:px-10 overflow-hidden w-full">
+          {/* TOP CONTENT */}
+          <div className="text-center md:text-right">
+            <p className="text-xs sm:text-sm font-semibold tracking-[0.3em] uppercase">
+              SCM SUPPLY
+            </p>
+
+            <p className="text-base sm:text-lg font-extrabold leading-tight mt-1">
+              GLOBAL&nbsp;INDUSTRIAL
+              <br />
+              PROCUREMENT
+            </p>
           </div>
 
-          {/* RIGHT SIDE DETAILS */}
-          <div className="relative flex flex-col justify-between items-center md:items-end w-full md:pl-40 lg:pl-52">
-            <div className="text-center md:text-right">
-              <p className="text-xs sm:text-sm font-semibold tracking-[0.3em] uppercase">
-                SCM SUPPLY
-              </p>
-
-              <p className="text-base sm:text-lg font-extrabold leading-tight mt-1">
-                GLOBAL&nbsp;INDUSTRIAL
-                <br />
-                PROCUREMENT
-              </p>
-            </div>
-
-            <div className="max-w-xs text-xs sm:text-sm text-slate-800 mt-8 text-center md:text-right">
-              <p className="font-semibold">
-                Offices in Dubai, UAE &amp; Houston, USA
-              </p>
-              <p>
-                End-to-end sourcing, consolidation &amp; shipping for
-                industrial, oil &amp; gas, infrastructure &amp; commercial
-                projects.
-              </p>
-            </div>
+          {/* BOTTOM CONTENT */}
+          <div className="max-w-xs text-xs sm:text-sm text-slate-200 mt-8 text-center self-center md:self-end md:text-right">
+            <p className="font-semibold">
+              Offices in Dubai, UAE &amp; Houston, USA
+            </p>
+            <p>
+              End-to-end sourcing, consolidation &amp; shipping for industrial,
+              oil &amp; gas, infrastructure &amp; commercial projects.
+            </p>
           </div>
         </div>
       </div>
