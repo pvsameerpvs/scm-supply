@@ -1,27 +1,50 @@
 // components/home/HelpCtaSection.tsx
+import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 export default function HelpCtaSection() {
   return (
-    <section className="relative overflow-hidden bg-white">
+    <section
+      className="
+        relative overflow-hidden 
+        bg-white 
+        min-h-[420px]
+        sm:min-h-[500px]
+        md:min-h-[600px]
+        lg:min-h-[680px]
+        flex items-center justify-center
+      "
+    >
+      {/* ⭐ FULL BACKGROUND IMAGE */}
+      <div className="absolute inset-0">
+        <Image
+          src="/help.jpg"
+          alt="Need help background"
+          fill
+          className="object-cover object-center"
+          priority
+        />
+        <div className="absolute inset-0 bg-black/20" />
+      </div>
+
       {/* ⭐ Top & Bottom Yellow Lines */}
       <div className="absolute inset-x-0 top-0 h-2 bg-amber-400" />
       <div className="absolute inset-x-0 bottom-0 h-2 bg-amber-400" />
 
-      {/* ⭐ Big faint background word */}
+      {/* ⭐ BACKGROUND WORD */}
       <div
-        className="pointer-events-none absolute inset-x-0 bottom-8 flex justify-center"
+        className="pointer-events-none absolute inset-x-0 bottom-12 flex justify-center"
         aria-hidden="true"
       >
-        <span className="text-[52px] md:text-[80px] font-extrabold uppercase tracking-[0.3em] text-amber-300/20 leading-none">
+        <span className="text-[40px] sm:text-[60px] md:text-[90px] font-extrabold uppercase tracking-[0.3em] text-amber-300/25 leading-none">
           Help
         </span>
       </div>
 
-      {/* ⭐ Main content */}
-      <div className="container relative py-16 md:py-24 space-y-16">
-        <div className="bg-slate-900/5 border border-slate-200 rounded-2xl p-6 md:p-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 shadow-sm">
+      {/* ⭐ MAIN CONTENT — CENTERED */}
+      <div className="relative w-full max-w-5xl px-4">
+        <div className="bg-white/85 backdrop-blur-md border border-slate-200 rounded-2xl p-6 md:p-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 shadow-xl">
           {/* Text */}
           <div className="space-y-3 max-w-3xl">
             <p className="text-xs font-semibold tracking-[0.25em] uppercase text-amber-500">
