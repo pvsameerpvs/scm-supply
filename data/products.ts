@@ -25,8 +25,8 @@ export const productCategories: ProductCategory[] = [
     "High-performance abrasives for workshops, fabrication shops, construction, shipyards and maintenance teams – delivered across UAE & GCC.",
   images: [
     "/images/products/15A. Abrasives, Grinding & Surface Prep.png",
-    "/images/products/15A. Abrasives, Grinding & Surface Prep.png",
-    "/images/products/15A. Abrasives, Grinding & Surface Prep.png"
+    "/images/products/15. Abrasives, Grinding & Surface Prep.png",
+    // "/images/products/15A. Abrasives, Grinding & Surface Prep.png"
   ],
   coverProductImage: "/images/products/15. Abrasives, Grinding & Surface Prep.png",
   bullets: [
@@ -137,8 +137,8 @@ Send us the part number, specifications, or a photo — and we’ll source it qu
     "High-performance adhesives, sealants & bonding solutions for construction, fabrication, automotive, electrical, HVAC and maintenance teams – delivered across UAE & GCC.",
   images: [
     "/images/products/16. Adhesives, Sealants & Bonding Solutions.png",
-    "/images/products/16. Adhesives, Sealants & Bonding Solutions.png",
-    "/images/products/16. Adhesives, Sealants & Bonding Solutions.png"
+    // "/images/products/16. Adhesives, Sealants & Bonding Solutions.png",
+    // "/images/products/16. Adhesives, Sealants & Bonding Solutions.png"
   ],
   coverProductImage: "/images/products/16. Adhesives, Sealants & Bonding Solutions.png",
   bullets: [
@@ -249,8 +249,8 @@ Send us the part number, description, or a photo — and we’ll source it quick
     "High-performance cleaning, janitorial & maintenance supplies for warehouses, workshops, factories and FM teams – delivered across UAE & GCC.",
   images: [
     "/images/products/13. Cleaning, Janitorial & Maintenance Chemicals.png",
-    "/images/products/13. Cleaning, Janitorial & Maintenance Chemicals.png",
-    "/images/products/13. Cleaning, Janitorial & Maintenance Chemicals.png"
+    "/images/products/13A. Cleaning, Janitorial & Maintenance Chemicals.png",
+    // "/images/products/13. Cleaning, Janitorial & Maintenance Chemicals.png"
   ],
   coverProductImage: "/images/products/13A. Cleaning, Janitorial & Maintenance Chemicals.png",
   bullets: [
@@ -342,7 +342,7 @@ Share the part number, specs, or a photo, and we’ll source it promptly with de
   images: [
     "/images/products/6. Compressed Air, Pneumatics & Vacuum Systems.png",
     "/images/products/6A. Compressed Air, Pneumatics & Vacuum Systems.png",
-    "/images/products/6A. Compressed Air, Pneumatics & Vacuum Systems.png"
+    "/images/products/6B. Compressed Air, Pneumatics & Vacuum Systems.png"
   ],
   coverProductImage: "/images/products/6B. Compressed Air, Pneumatics & Vacuum Systems.png",
   bullets: [
@@ -459,8 +459,8 @@ Send us the part number, description, or a photo — and we’ll source it quick
     "High-quality electrical and automation components for industrial plants, MEP contractors, OEMs, and maintenance teams – delivered across UAE & GCC.",
   images: [
     "/images/products/4A. Electrical, Wiring & Industrial Automation.png",
-    "/images/products/4A. Electrical, Wiring & Industrial Automation.png",
-    "/images/products/4A. Electrical, Wiring & Industrial Automation.png"
+    // "/images/products/4A. Electrical, Wiring & Industrial Automation.png",
+    "/images/products/4. Electrical, Wiring & Industrial Automation.png"
   ],
   coverProductImage: "/images/products/4. Electrical, Wiring & Industrial Automation.png",
   bullets: [
@@ -579,8 +579,8 @@ Send us the part number, description, or a photo—and we’ll source it quickly
     "Hygienic, durable and food-grade supplies for kitchens, restaurants, cafeterias, hotels, catering companies and cloud kitchens — delivered across UAE & GCC.",
   images: [
     "/images/products/21 Food Service, Prep & Hospitality Equipment.png",
-    "/images/products/21 Food Service, Prep & Hospitality Equipment.png",
-    "/images/products/21 Food Service, Prep & Hospitality Equipment.png"
+    // "/images/products/21 Food Service, Prep & Hospitality Equipment.png",
+    // "/images/products/21 Food Service, Prep & Hospitality Equipment.png"
   ],
   coverProductImage: "/images/products/21 Food Service, Prep & Hospitality Equipment.png",
   bullets: [
@@ -680,11 +680,11 @@ Share the part number, specs, or a photo, and we’ll source it promptly with de
   heroNote:
     "Your reliable UAE supplier for Grainger-style industrial, MRO, tools, safety & facility products — with fast sourcing and GCC-wide delivery.",
   images: [
-    "/images/products/grainger-1.jpeg",
-    "/images/products/grainger-2.jpeg",
-    "/images/products/grainger-3.jpeg"
+    "/images/products/Grainger-Equivalent Industrial & MRO Products.png",
+    // "/images/products/grainger-2.jpeg",
+    // "/images/products/grainger-3.jpeg"
   ],
-  coverProductImage: "/images/products/grainger-1.jpeg",
+  coverProductImage: "/images/products/Grainger-Equivalent Industrial & MRO Products.png",
   bullets: [
     "Industrial tools including hand tools, power tools, machining tools, cutting tools and precision measuring instruments.",
     "PPE and safety supplies such as gloves, helmets, eyewear, respiratory protection, spill kits and first aid equipment.",
@@ -805,8 +805,8 @@ Share the part number, specs, or a photo — and we’ll source it promptly with
     "High-performance HVAC and air movement products built for UAE climatic conditions — ventilation, cooling, heating & airflow systems delivered across UAE & GCC.",
   images: [
     "/images/products/5A. HVAC, Air Movement & Temperature Control.png",
-    "/images/products/5A. HVAC, Air Movement & Temperature Control.png",
-    "/images/products/5A. HVAC, Air Movement & Temperature Control.png"
+    "/images/products/5. HVAC, Air Movement & Temperature Control.png",
+    // "/images/products/5A. HVAC, Air Movement & Temperature Control.png"
   ],
   coverProductImage: "/images/products/5. HVAC, Air Movement & Temperature Control.png",
   bullets: [
@@ -918,8 +918,8 @@ Send us the part number, description, or a photo — and we’ll source it quick
     "High-performance industrial hoses and hose management solutions for air, water, fuel, chemicals, hydraulics & high-pressure systems — delivered fast across UAE & GCC.",
   images: [
     "/images/products/7A. Industrial Hoses, Hose Reels & Hose Accessories.png",
-    "/images/products/7A. Industrial Hoses, Hose Reels & Hose Accessories.png",
-    "/images/products/7A. Industrial Hoses, Hose Reels & Hose Accessories.png"
+    "/images/products/7. Industrial Hoses, Hose Reels & Hose Accessories.png",
+    // "/images/products/7A. Industrial Hoses, Hose Reels & Hose Accessories.png"
   ],
   coverProductImage: "/images/products/7. Industrial Hoses, Hose Reels & Hose Accessories.png",
   bullets: [
@@ -1041,8 +1041,8 @@ Send us the part number, specifications, or a photo — and we’ll source it qu
     "Durable, high-efficiency lighting solutions engineered for industrial, commercial, outdoor and hazardous environments — delivered across UAE & GCC.",
   images: [
     "/images/products/14B. Industrial Lighting & Electrical Fixtures.png",
-    "/images/products/14B. Industrial Lighting & Electrical Fixtures.png",
-    "/images/products/14B. Industrial Lighting & Electrical Fixtures.png"
+    "/images/products/14A. Industrial Lighting & Electrical Fixtures.png",
+    // "/images/products/14B. Industrial Lighting & Electrical Fixtures.png"
   ],
   coverProductImage: "/images/products/14A. Industrial Lighting & Electrical Fixtures.png",
   bullets: [
@@ -1156,8 +1156,8 @@ Share the part number, description, or a photo — and we’ll source it quickly
     "High-quality inserts and industrial fittings for mechanical, plumbing, pneumatic, hydraulic and fabrication applications — delivered across UAE & GCC.",
   images: [
     "/images/products/12. Plumbing, Piping, Tubing & Fluid Fittings.png",
-    "/images/products/12. Plumbing, Piping, Tubing & Fluid Fittings.png",
-    "/images/products/12. Plumbing, Piping, Tubing & Fluid Fittings.png"
+    "/images/products/12A. Plumbing, Piping, Tubing & Fluid Fittings.png",
+    // "/images/products/12. Plumbing, Piping, Tubing & Fluid Fittings.png"
   ],
   coverProductImage: "/images/products/12A. Plumbing, Piping, Tubing & Fluid Fittings.png",
   bullets: [
@@ -1260,11 +1260,11 @@ Send us your part number, photo, drawing or reference, and we will source and de
   heroNote:
     "High-security locks, LOTO devices, door hardware, and access control products for commercial buildings, warehouses, and industrial facilities — delivered across UAE & GCC.",
   images: [
-    "/images/products/locks-1.jpeg",
-    "/images/products/locks-2.jpeg",
-    "/images/products/locks-3.jpeg"
+    "/images/products/Locks, Security Hardware & Access Control Products.png",
+    // "/images/products/locks-2.jpeg",
+    // "/images/products/locks-3.jpeg"
   ],
-  coverProductImage: "/images/products/locks-1.jpeg",
+  coverProductImage: "/images/products/Locks, Security Hardware & Access Control Products.png",
   bullets: [
     "Industrial padlocks including steel, brass, weather-resistant, combination and master-keyed padlock systems.",
     "Lockout/Tagout (LOTO) products including safety padlocks, hasps, circuit breaker lockouts, valve lockouts and group lockout boxes.",
@@ -1367,11 +1367,11 @@ Share the part number, specs, or a photo — and we’ll source it promptly with
   heroNote:
     "Reliable supplier for McMaster-Carr style industrial products — from fasteners to hardware, raw materials, tools, electrical components & MRO supplies, delivered across UAE & GCC.",
   images: [
-    "/images/products/mcmaster-1.jpeg",
-    "/images/products/mcmaster-2.jpeg",
-    "/images/products/mcmaster-3.jpeg"
+    "/images/products/McMaster-Carr Industrial Products.png",
+    // "/images/products/mcmaster-2.jpeg",
+    // "/images/products/mcmaster-3.jpeg"
   ],
-  coverProductImage: "/images/products/mcmaster-1.jpeg",
+  coverProductImage: "/images/products/McMaster-Carr Industrial Products.png",
   bullets: [
     "Fasteners including bolts, nuts, screws, washers, threaded rods, rivets, anchors and specialty hardware.",
     "Industrial hardware such as hinges, latches, knobs, springs, slides, leveling mounts & vibration isolators.",
@@ -1490,8 +1490,9 @@ Send us the part number, link, or screenshot — and we’ll source it immediate
     "High-performance motors, drives, gearboxes, actuators and motion components for industrial automation, HVAC, mechanical systems and manufacturing lines — delivered across UAE & GCC.",
   images: [
     "/images/products/8. Motors, Drives & Motion Components.png",
-    "/images/products/8. Motors, Drives & Motion Components.png",
-    "/images/products/8. Motors, Drives & Motion Components.png"
+    "/images/products/8A. Motors, Drives & Motion Components.png"
+    // "/images/products/8. Motors, Drives & Motion Components.png",
+    // "/images/products/8. Motors, Drives & Motion Components.png"
   ],
   coverProductImage: "/images/products/8A. Motors, Drives & Motion Components.png",
   bullets: [
@@ -1602,8 +1603,9 @@ Send us the part number, specifications, or a photo — and we’ll source it qu
     "High-quality packaging, office and warehouse supplies designed for efficiency, durability and daily operational needs — delivered across UAE & GCC.",
   images: [
     "/images/products/20A. Office, Packaging & Warehouse Supplies.png",
-    "/images/products/20A. Office, Packaging & Warehouse Supplies.png",
-    "/images/products/20A. Office, Packaging & Warehouse Supplies.png"
+    "/images/products/20. Office, Packaging & Warehouse Supplies.png"
+    // "/images/products/20A. Office, Packaging & Warehouse Supplies.png",
+    // "/images/products/20A. Office, Packaging & Warehouse Supplies.png"
   ],
   coverProductImage: "/images/products/20. Office, Packaging & Warehouse Supplies.png",
   bullets: [
@@ -1719,8 +1721,8 @@ Share the part number, specs or a photo, and we’ll source it promptly with del
     "Durable, weather-resistant outdoor and garden tools for landscaping, maintenance, agriculture and field service — delivered anywhere in the UAE & GCC.",
   images: [
     "/images/products/22 Outdoor, Garden & Field Tools.png",
-    "/images/products/22 Outdoor, Garden & Field Tools.png",
-    "/images/products/22 Outdoor, Garden & Field Tools.png"
+    "/images/products/22A Outdoor, Garden & Field Tools.png",
+    // "/images/products/22 Outdoor, Garden & Field Tools.png"
   ],
   coverProductImage: "/images/products/22A Outdoor, Garden & Field Tools.png",
   bullets: [
@@ -1819,8 +1821,8 @@ Share the part number, specs, or a photo, and we’ll source it promptly with de
     "High-quality piping, tubing, connectors and fluid fittings for water, air, chemicals, oil, gas and hydraulic systems — delivered across UAE & GCC.",
   images: [
     "/images/products/12. Plumbing, Piping, Tubing & Fluid Fittings.png",
-    "/images/products/12. Plumbing, Piping, Tubing & Fluid Fittings.png",
-    "/images/products/12. Plumbing, Piping, Tubing & Fluid Fittings.png"
+    "/images/products/12A. Plumbing, Piping, Tubing & Fluid Fittings.png",
+    // "/images/products/12. Plumbing, Piping, Tubing & Fluid Fittings.png"
   ],
   coverProductImage: "/images/products/12A. Plumbing, Piping, Tubing & Fluid Fittings.png",
   bullets: [
@@ -1941,9 +1943,9 @@ Send us the part number, specification, or a photo — and we’ll source it qui
   images: [
     "/images/products/3A. Safety, Facility Protection & Workplace Supplies.png",
     "/images/products/3B. Safety, Facility Protection & Workplace Supplies.png",
-    "/images/products/3B. Safety, Facility Protection & Workplace Supplies.pngg"
+    "/images/products/3. Safety, Facility Protection & Workplace Supplies.png"
   ],
-  coverProductImage: "/images/3. Safety, Facility Protection & Workplace Supplies.png",
+  coverProductImage: "/images/products/3. Safety, Facility Protection & Workplace Supplies.png",
   bullets: [
     "Safety gloves including cut-resistant, chemical-resistant, disposable, heat-resistant, welding and electrical-insulated gloves.",
     "Head protection including helmets, hard hats, bump caps, visors and welding helmets.",
@@ -2057,8 +2059,8 @@ Send us the part number, product details, or a photo and we will source it quick
     "Reliable, genuine and application-specific pumping solutions for oil & gas, water, HVAC, fire systems, industrial plants and construction — delivered across UAE & GCC.",
   images: [
     "/images/products/10A.Pumps, Tanks & Liquid Handling.png",
-    "/images/products/10A.Pumps, Tanks & Liquid Handling.png",
-    "/images/products/10A.Pumps, Tanks & Liquid Handling.png"
+    "/images/products/10.Pumps, Tanks & Liquid Handling.png",
+    // "/images/products/10A.Pumps, Tanks & Liquid Handling.png"
   ],
   coverProductImage: "/images/products/10.Pumps, Tanks & Liquid Handling.png",
   bullets: [
@@ -2192,8 +2194,8 @@ If you don’t see your exact pump type listed, share the existing model, duty p
     "High-accuracy testing, inspection and diagnostic instruments for field technicians, HVAC teams, electricians, inspectors and maintenance engineers — delivered across UAE & GCC.",
   images: [
     "/images/products/18. Testing, Inspection & Diagnostics.png",
-    "/images/products/18. Testing, Inspection & Diagnostics.png",
-    "/images/products/18. Testing, Inspection & Diagnostics.png"
+    "/images/products/18A. Testing, Inspection & Diagnostics.png",
+    // "/images/products/18. Testing, Inspection & Diagnostics.png"
   ],
   coverProductImage: "/images/products/18A. Testing, Inspection & Diagnostics.png",
   bullets: [
@@ -2314,8 +2316,8 @@ Just send us the details, part number, or a photo of what you need, and we’ll 
     "Professional-grade tools and machining equipment sourced from trusted global manufacturers — ideal for fabrication, maintenance, construction, oil & gas, and industrial workshops.",
   images: [
     "/images/products/1. Tools, Machining & Workshop Equipment.png",
-    "/images/products/1. Tools, Machining & Workshop Equipment.png",
-    "/images/products/1. Tools, Machining & Workshop Equipment.png"
+    "/images/products/1A. Tools, Machining & Workshop Equipment.png",
+    // "/images/products/1. Tools, Machining & Workshop Equipment.png"
   ],
   coverProductImage: "/images/products/1A. Tools, Machining & Workshop Equipment.png",
   bullets: [
@@ -2435,11 +2437,11 @@ Send us the part number, description, or a photo—and we’ll source it quickly
   heroNote:
     "Your trusted UAE supplier for Uline-style industrial supplies: packaging materials, warehouse equipment, safety, janitorial, office & facility products delivered quickly across the UAE and GCC.",
   images: [
-    "/images/products/uline-1.jpeg",
-    "/images/products/uline-2.jpeg",
-    "/images/products/uline-3.jpeg"
+    "/images/products/Uline-Style Industrial & Packaging Supplies.png",
+    // "/images/products/uline-2.jpeg",
+    // "/images/products/uline-3.jpeg"
   ],
-  coverProductImage: "/images/products/uline-1.jpeg",
+  coverProductImage: "/images/products/Uline-Style Industrial & Packaging Supplies.png",
   bullets: [
     "Shipping & packaging supplies such as boxes, bags, bubble wrap, stretch film, strapping and tape.",
     "Warehouse equipment including pallet jacks, carts, dollies, shelving and storage bins.",
@@ -2755,8 +2757,8 @@ If the required valve isn’t listed, simply provide the part number, specificat
     "Complete welding, brazing and heat-joining solutions — from machines and consumables to torches, safety gear and thermal tools, delivered across UAE & GCC.",
   images: [
     "/images/products/17. Welding, Brazing & Heat Joining.png",
-    "/images/products/17. Welding, Brazing & Heat Joining.png",
-    "/images/products/17. Welding, Brazing & Heat Joining.png"
+    "/images/products/17A. Welding, Brazing & Heat Joining.png",
+    // "/images/products/17. Welding, Brazing & Heat Joining.png"
   ],
   coverProductImage: "/images/products/17A. Welding, Brazing & Heat Joining.png",
   bullets: [
