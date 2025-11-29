@@ -24,11 +24,26 @@ export function IndustrialBrandsSection({ brands }: Props) {
     null
   );
 
+  // ✅ Ensure we don't get duplicates even if parent pushes same brand multiple times
+  const baseBrands = useMemo(() => {
+    const map = new Map<string, IndustrialBrand>();
+
+    for (const b of brands) {
+      if (b.slug && !map.has(b.slug)) {
+        map.set(b.slug, b);
+      }
+    }
+
+    return Array.from(map.values());
+  }, [brands]);
+
   const filtered = useMemo(() => {
-    if (!query.trim()) return brands;
-    const q = query.toLowerCase();
-    return brands.filter((b) => b.name.toLowerCase().includes(q));
-  }, [brands, query]);
+    const q = query.trim().toLowerCase();
+
+    if (!q) return baseBrands;
+
+    return baseBrands.filter((b) => b.name.toLowerCase().includes(q));
+  }, [baseBrands, query]);
 
   const whatsappNumber = "0000000000"; // TODO: replace with your WhatsApp number
 
@@ -69,7 +84,17 @@ export function IndustrialBrandsSection({ brands }: Props) {
       {/* Brand Grid */}
       <div className="bg-white border rounded-2xl p-4 md:p-6">
         {filtered.length === 0 ? (
-          <p className="text-slate-500 text-sm">No results found.</p>
+          <div className="flex flex-col items-center justify-center py-8 gap-3">
+            <div className="relative w-40 h-40">
+              <Image
+                src="/not found.png"
+                alt="Not found"
+                fill
+                className="object-contain  opacity-60"
+              />
+            </div>
+            <p className="text-slate-500 text-sm">No results found.</p>
+          </div>
         ) : (
           <div className="grid gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
             {filtered.map((brand) => (
@@ -78,12 +103,12 @@ export function IndustrialBrandsSection({ brands }: Props) {
                 type="button"
                 onClick={() => setSelectedBrand(brand)}
                 className="
-            flex items-center gap-3
-            rounded-xl border bg-slate-50
-            px-3 py-3
-            hover:border-amber-400 hover:bg-amber-50
-            transition
-          "
+                  flex items-center gap-3
+                  rounded-xl border bg-slate-50
+                  px-3 py-3
+                  hover:border-amber-400 hover:bg-amber-50
+                  transition
+                "
               >
                 {brand.logo && (
                   <div className="relative h-8 w-8">

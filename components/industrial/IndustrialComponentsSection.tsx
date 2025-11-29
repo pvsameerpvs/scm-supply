@@ -3,6 +3,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import Image from "next/image";
 import { industrialCategories } from "@/data/industrialCategories";
 import IndustrialCategoryCard from "./IndustrialCategoryCard";
 
@@ -101,25 +102,6 @@ export default function IndustrialComponentsSection() {
                 >
                   Send RFQ
                 </a>
-
-                {/* ⭐ WhatsApp Button (if preferred) */}
-                {/* 
-    <a
-      href="https://wa.me/971XXXXXXXXX"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="
-        text-[10px] font-medium 
-        bg-[#25D366] text-white 
-        px-3 py-1 rounded-full
-        border border-[#25D366]
-        hover:bg-[#1ebe5d]
-        transition
-      "
-    >
-      WhatsApp
-    </a>
-    */}
               </div>
 
               <Input
@@ -198,11 +180,21 @@ export default function IndustrialComponentsSection() {
 
         {/* Grid */}
         {filteredCategories.length === 0 ? (
-          <p className="text-sm text-slate-500">
-            No categories or items match{" "}
-            <span className="font-semibold">“{search}”</span>. Try a different
-            keyword.
-          </p>
+          <div className="flex flex-col items-center justify-center py-10 gap-3">
+            <div className="relative w-40 h-40">
+              <Image
+                src="/not found.png"
+                alt="Not found"
+                fill
+                className="object-contain  opacity-60"
+              />
+            </div>
+            <p className="text-sm text-slate-500 text-center">
+              No categories or items match{" "}
+              <span className="font-semibold">“{search}”</span>. Try a different
+              keyword.
+            </p>
+          </div>
         ) : (
           <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
             {filteredCategories.map((category) => (
