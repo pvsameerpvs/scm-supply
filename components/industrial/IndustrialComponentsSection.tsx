@@ -82,9 +82,46 @@ export default function IndustrialComponentsSection() {
             </div>
 
             <div className="w-full md:w-80 space-y-2">
-              <label className="text-xs font-medium uppercase tracking-wide text-slate-500">
-                Search component families
-              </label>
+              <div className="flex items-center justify-between">
+                <label className="text-xs font-medium uppercase tracking-wide text-slate-500">
+                  Search component families
+                </label>
+
+                {/* ⭐ RFQ Button (Yellow) */}
+                <a
+                  href="/contact"
+                  className="
+        text-[10px] font-medium 
+        bg-[#f7c948] text-slate-900 
+        px-3 py-1 rounded-full
+        border border-[#f7c948]
+        hover:bg-[#f7c948]/90 hover:text-slate-900
+        transition
+      "
+                >
+                  Send RFQ
+                </a>
+
+                {/* ⭐ WhatsApp Button (if preferred) */}
+                {/* 
+    <a
+      href="https://wa.me/971XXXXXXXXX"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="
+        text-[10px] font-medium 
+        bg-[#25D366] text-white 
+        px-3 py-1 rounded-full
+        border border-[#25D366]
+        hover:bg-[#1ebe5d]
+        transition
+      "
+    >
+      WhatsApp
+    </a>
+    */}
+              </div>
+
               <Input
                 placeholder="Search by item or function (e.g. pulleys, anchors, cable ties)…"
                 value={search}
