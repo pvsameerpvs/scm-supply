@@ -9,16 +9,16 @@ import { anton } from "@/app/fonts";
 // Background slideshow images
 const heroImages = [
   "/hero-change8.jpeg",
-  "/hero-change1.jpeg",
   "/hero-change2.jpeg",
-  "/hero-change3.jpeg",
   "/hero-change4.jpeg",
   "/hero-change5.jpeg",
   "/hero-change6.jpeg",
   "/hero-change7.jpeg",
-  "/hero-motor2.jpg",
-  "/hero-motor3.jpg",
   "/hero-motor4.jpg",
+  "/hero-last1.jpg",
+  "/hero-last2.jpg",
+  "/hero-last3.jpg",
+  "/hero-last4.jpg",
 ];
 
 // Text to type
@@ -127,7 +127,7 @@ export default function HeroSection() {
         <div className="relative flex flex-col justify-between p-6 sm:p-8">
           {/* 🔼 TOP LEFT CONTENT */}
           <div className="flex flex-col gap-3">
-            <p className="text-xs tracking-[0.28em] uppercase text-yellow-400">
+            <p className="text-2xl md:text-4xl tracking-[0.28em] uppercase text-yellow-400 font-bold">
               SCM Supply FZCO
             </p>
 

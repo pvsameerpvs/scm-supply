@@ -15,7 +15,7 @@ export function MainFooter() {
   return (
     <footer className="relative overflow-hidden bg-[#f7c948] text-slate-900">
       {/* MAIN FOOTER CONTENT */}
-      <div className="container py-14 grid gap-10 md:grid-cols-4">
+      <div className="container py-14 grid gap-10 md:grid-cols-3">
         {/* COMPANY */}
         <div className="space-y-3">
           <h3 className="text-lg font-semibold">SCM Supply FZCO</h3>
@@ -32,18 +32,18 @@ export function MainFooter() {
 
           <div className="flex items-start gap-2 text-sm">
             <Phone className="h-4 w-4 text-slate-800 mt-0.5" />
-            <a href="tel:+000000000" className="hover:text-slate-950">
-              +00 000 0000
+            <a href="tel:+971543756775" className="hover:text-slate-950">
+              +971 54 3756775
             </a>
           </div>
 
           <div className="flex items-start gap-2 text-sm">
             <Mail className="h-4 w-4 text-slate-800 mt-0.5" />
             <a
-              href="mailto:info@scmsupply.com"
+              href="mailto:sales@scmsupply.com"
               className="hover:text-slate-950"
             >
-              info@scmsupply.com
+              sales@scmsupply.com
             </a>
           </div>
         </div>
@@ -55,24 +55,30 @@ export function MainFooter() {
           <div className="flex items-start gap-2 text-sm">
             <MapPin className="h-4 w-4 text-slate-800 mt-0.5" />
             <p>
-              <span className="font-medium">UAE – Dubai:</span>
+              <span className="font-medium">
+                {" "}
+                Bldg. A1, DDP, Dubai Silicon Oasis
+              </span>
               <br />
-              Dubai Airport Free Zone (DAFZA)
+              Dubai, United Arab Emirates
             </p>
           </div>
 
           <div className="flex items-start gap-2 text-sm">
             <MapPin className="h-4 w-4 text-slate-800 mt-0.5" />
             <p>
-              <span className="font-medium">USA – Houston:</span>
+              <span className="font-medium">
+                {" "}
+                9898 Bissonnet St., Suite 375D
+              </span>
               <br />
-              Houston, Texas, United States
+              Houston, TX 77036, United States
             </p>
           </div>
         </div>
 
         {/* SOCIAL MEDIA */}
-        <div className="space-y-3">
+        {/* <div className="space-y-3">
           <h4 className="font-semibold mb-1">Follow Us</h4>
 
           <div className="flex items-center gap-4 text-slate-800">
@@ -86,7 +92,7 @@ export function MainFooter() {
               <Linkedin className="h-5 w-5" />
             </Link>
           </div>
-        </div>
+        </div> */}
       </div>
 
       {/* COPYRIGHT BAR */}

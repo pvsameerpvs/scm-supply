@@ -96,32 +96,38 @@ export function IndustrialBrandsSection({ brands }: Props) {
             <p className="text-slate-500 text-sm">No results found.</p>
           </div>
         ) : (
-          <div className="grid gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
+          <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
             {filtered.map((brand) => (
               <button
                 key={brand.slug}
                 type="button"
                 onClick={() => setSelectedBrand(brand)}
                 className="
-                  flex items-center gap-3
-                  rounded-xl border bg-slate-50
-                  px-3 py-3
-                  hover:border-amber-400 hover:bg-amber-50
-                  transition
-                "
+        group
+        flex flex-col items-center justify-center
+        gap-4
+        rounded-2xl border border-slate-200
+        bg-slate-50
+        p-6
+        min-h-[160px]
+        hover:border-amber-400 hover:bg-amber-50
+        transition-all duration-200
+        shadow-sm hover:shadow-md
+      "
               >
+                {/* Bigger brand logo */}
                 {brand.logo && (
-                  <div className="relative h-8 w-8">
+                  <div className="relative h-14 w-14 sm:h-16 sm:w-16">
                     <Image
                       src={brand.logo}
                       alt={brand.name}
                       fill
-                      className="object-contain"
+                      className="object-contain group-hover:scale-110 transition"
                     />
                   </div>
                 )}
 
-                <span className="text-sm font-medium text-slate-800">
+                <span className="text-sm md:text-base font-medium text-slate-800 text-center">
                   {brand.name}
                 </span>
               </button>

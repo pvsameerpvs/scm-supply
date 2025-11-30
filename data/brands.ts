@@ -46,9 +46,9 @@ export type IndustrialBrand = {
 // ];
 
 export const industrialBrands: IndustrialBrand[] = [
- { name: "Grainger", slug: "grainger", logo: "/grainger.png" },
-  { name: "McMaster-Carr", slug: "mcmaster-carr", logo: "/McMaster-Carr.png" },
-   { name: "Uline", slug: "uline", logo: "/uline.png" },
+
+  
+  
   { name: "3M", slug: "3m", logo: "/3M-Logo.png" },
   { name: "ABB", slug: "abb", logo: "/ABB-logo.png" },
   { name: "Aeroquip", slug: "aeroquip", logo: "/Aeroquip-Danfoss Logo.png" },
@@ -61,6 +61,7 @@ export const industrialBrands: IndustrialBrand[] = [
   { name: "DeWalt", slug: "dewalt", logo: "/DeWalt-Logo.png" },
   { name: "DuPont", slug: "dupont", logo: "/DuPont_logo.png" },
   { name: "Eaton", slug: "eaton", logo: "/Eaton-Logo.png" },
+   { name: "Grainger", slug: "grainger", logo: "/grainger.png" },
   { name: "Weatherhead", slug: "weatherhead", logo: "/weatherhead.png" },
   { name: "Fluke", slug: "fluke", logo: "/Fluke_Corporation_logo.png" },
   { name: "Gates", slug: "gates", logo: "/Gates-Logo.png" },
@@ -78,6 +79,7 @@ export const industrialBrands: IndustrialBrand[] = [
   { name: "Master Lock", slug: "master-lock", logo: "/Master-Lock-logo.png" },
   { name: "McMaster-Carr", slug: "mcmaster-carr", logo: "/McMaster-Carr.png" },
   { name: "MCR Safety", slug: "mcr-safety", logo: "/MCR Safety Logo.png" },
+  { name: "McMaster-Carr", slug: "mcmaster-carr", logo: "/McMaster-Carr.png" },
   { name: "Meco", slug: "meco", logo: "/meco.png" },
   { name: "Midwest", slug: "midwest", logo: "/midwest.png" },
   { name: "Milwaukee", slug: "milwaukee", logo: "/Milwaukee_Logo.png" },
@@ -98,6 +100,7 @@ export const industrialBrands: IndustrialBrand[] = [
   { name: "Stanley", slug: "stanley", logo: "/Stanley_Hand_Tools_logo.png" },
   { name: "Swagelok", slug: "swagelok", logo: "/swagelok-logo.png" },
   { name: "Tekton", slug: "tekton", logo: "/Tekton Logo.png" },
+   { name: "Uline", slug: "uline", logo: "/uline.png" },
   {
     name: "Tital Flow Controls",
     slug: "tital-flow-controls",
