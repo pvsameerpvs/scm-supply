@@ -4,6 +4,7 @@ import "./globals.css";
 import { MainHeader } from "@/components/layout/MainHeader";
 import { MainFooter } from "@/components/layout/MainFooter";
 import { anton } from "./fonts";
+import WhatsAppFloat from "@/components/WhatsAppFloat";
 
 export const metadata: Metadata = {
   title: "SCM Supply FZCO | Industrial Procurement & Supply-Chain Partner",
@@ -27,6 +28,7 @@ export default function RootLayout({
           </main>
 
           <MainFooter />
+            <WhatsAppFloat />
         </div>
       </body>
     </html>

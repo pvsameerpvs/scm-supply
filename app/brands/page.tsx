@@ -17,7 +17,7 @@ export default function BrandsPage() {
       <section className="relative w-full min-h-[260px] sm:min-h-[320px] md:min-h-[380px] lg:min-h-[420px] flex items-center justify-center overflow-hidden">
         {/* BG IMAGE */}
         <Image
-          src="/product-bg.jpg" // <-- your background image
+          src="/power_tools.jpg" // <-- your background image
           alt="Brands background"
           fill
           className="object-cover object-center"

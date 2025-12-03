@@ -51,7 +51,7 @@ export function AboutHero() {
         <div className="relative m-5 h-[calc(100%-2.5rem)]">
           <div className="relative h-full w-full overflow-hidden shadow-2xl">
             <Image
-              src="/about1.jpg" // same image as your page
+              src="/about1.jpeg" // same image as your page
               alt="Industrial safety & procurement"
               fill
               className="object-cover"

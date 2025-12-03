@@ -20,7 +20,7 @@ export default function ProductsIndexPage() {
         {/* Background image */}
         <div className="absolute inset-0">
           <Image
-            src="/product-bgg.jpg" // <-- make sure this image exists in /public
+            src="/prodcut-hero.png" // <-- make sure this image exists in /public
             alt="Product categories background"
             fill
             className="object-cover object-center"

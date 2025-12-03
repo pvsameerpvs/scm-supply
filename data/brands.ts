@@ -59,6 +59,7 @@ export const industrialBrands: IndustrialBrand[] = [
   { name: "Cameron", slug: "cameron", logo: "/Cameron-Logo.png" },
   { name: "CoxReels", slug: "coxreels", logo: "/CoxReels - Logo.png" },
   { name: "DeWalt", slug: "dewalt", logo: "/DeWalt-Logo.png" },
+   { name: "Danfoss", slug: "danfoss", logo: "/Danfoss.jpeg" },
   { name: "DuPont", slug: "dupont", logo: "/DuPont_logo.png" },
   { name: "Eaton", slug: "eaton", logo: "/Eaton-Logo.png" },
    { name: "Grainger", slug: "grainger", logo: "/grainger.png" },
