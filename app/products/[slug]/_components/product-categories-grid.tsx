@@ -1,4 +1,3 @@
-// app/products/_components/product-categories-grid.tsx
 "use client";
 
 import { useMemo, useState } from "react";

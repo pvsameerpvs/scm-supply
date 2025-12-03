@@ -680,11 +680,11 @@ Share the part number, specs, or a photo, and we’ll source it promptly with de
   heroNote:
     "Your reliable UAE supplier for Grainger-style industrial, MRO, tools, safety & facility products — with fast sourcing and GCC-wide delivery.",
   images: [
-    "/images/products/Grainger-Equivalent Industrial & MRO Products.png",
-    // "/images/products/grainger-2.jpeg",
+    "/images/products/Grainger-Equivalent Industrial & MRO Products1.jpeg",
+    "/images/products/Grainger-Equivalent Industrial & MRO Products2.jpeg",
     // "/images/products/grainger-3.jpeg"
   ],
-  coverProductImage: "/images/products/Grainger-Equivalent Industrial & MRO Products.png",
+  coverProductImage: "/images/products/Grainger-Equivalent Industrial & MRO Products2.jpeg",
   bullets: [
     "Industrial tools including hand tools, power tools, machining tools, cutting tools and precision measuring instruments.",
     "PPE and safety supplies such as gloves, helmets, eyewear, respiratory protection, spill kits and first aid equipment.",
@@ -1260,11 +1260,11 @@ Send us your part number, photo, drawing or reference, and we will source and de
   heroNote:
     "High-security locks, LOTO devices, door hardware, and access control products for commercial buildings, warehouses, and industrial facilities — delivered across UAE & GCC.",
   images: [
-    "/images/products/Locks, Security Hardware & Access Control Products.png",
+    "/images/products/Locks, Security Hardware & Access Control Products.jpeg",
     // "/images/products/locks-2.jpeg",
     // "/images/products/locks-3.jpeg"
   ],
-  coverProductImage: "/images/products/Locks, Security Hardware & Access Control Products.png",
+  coverProductImage: "/images/products/Locks, Security Hardware & Access Control Products.jpeg",
   bullets: [
     "Industrial padlocks including steel, brass, weather-resistant, combination and master-keyed padlock systems.",
     "Lockout/Tagout (LOTO) products including safety padlocks, hasps, circuit breaker lockouts, valve lockouts and group lockout boxes.",
@@ -1367,11 +1367,11 @@ Share the part number, specs, or a photo — and we’ll source it promptly with
   heroNote:
     "Reliable supplier for McMaster-Carr style industrial products — from fasteners to hardware, raw materials, tools, electrical components & MRO supplies, delivered across UAE & GCC.",
   images: [
-    "/images/products/McMaster-Carr Industrial Products.png",
-    // "/images/products/mcmaster-2.jpeg",
+    "/images/products/McMaster-Carr Industrial Products1.jpeg",
+    "/images/products/McMaster-Carr Industrial Products2.jpeg",
     // "/images/products/mcmaster-3.jpeg"
   ],
-  coverProductImage: "/images/products/McMaster-Carr Industrial Products.png",
+  coverProductImage: "/images/products/McMaster-Carr Industrial Products1.jpeg",
   bullets: [
     "Fasteners including bolts, nuts, screws, washers, threaded rods, rivets, anchors and specialty hardware.",
     "Industrial hardware such as hinges, latches, knobs, springs, slides, leveling mounts & vibration isolators.",
@@ -2437,11 +2437,11 @@ Send us the part number, description, or a photo—and we’ll source it quickly
   heroNote:
     "Your trusted UAE supplier for Uline-style industrial supplies: packaging materials, warehouse equipment, safety, janitorial, office & facility products delivered quickly across the UAE and GCC.",
   images: [
-    "/images/products/Uline-Style Industrial & Packaging Supplies.png",
-    // "/images/products/uline-2.jpeg",
+    "/images/products/Uline-Style Industrial & Packaging Supplies2.jpeg",
+    "/images/products/Uline-Style Industrial & Packaging Supplies2.jpeg",
     // "/images/products/uline-3.jpeg"
   ],
-  coverProductImage: "/images/products/Uline-Style Industrial & Packaging Supplies.png",
+  coverProductImage: "/images/products/Uline-Style Industrial & Packaging Supplies2.jpeg",
   bullets: [
     "Shipping & packaging supplies such as boxes, bags, bubble wrap, stretch film, strapping and tape.",
     "Warehouse equipment including pallet jacks, carts, dollies, shelving and storage bins.",
