@@ -3,7 +3,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { MainHeader } from "@/components/layout/MainHeader";
 import { MainFooter } from "@/components/layout/MainFooter";
-import { anton } from "./fonts";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
 
 export const metadata: Metadata = {
