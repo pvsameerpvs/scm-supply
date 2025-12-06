@@ -19,9 +19,13 @@ export const metadata: Metadata = {
     "UAE Industrial Supply",
     "USA Industrial Supply",
     "Supply-Chain Solutions",
-    "Dubai Industrial Supplier",  ],
-    
-    icons: {
+    "Dubai Industrial Supplier",],
+
+  other: {
+    "google-site-verification": "HVVOwpMg-C7nPFMNiUr3LA-MISmQlY6lUeQ3R6ppVSo",
+  },
+
+  icons: {
     icon: "/logo.png",
     shortcut: "/logo.png",
     apple: "/logo.png",
@@ -44,7 +48,7 @@ export default function RootLayout({
           </main>
 
           <MainFooter />
-            <WhatsAppFloat />
+          <WhatsAppFloat />
         </div>
       </body>
     </html>
