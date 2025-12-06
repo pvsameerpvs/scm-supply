@@ -6,10 +6,60 @@ import { AboutServicesValue } from "@/components/about/AboutServicesValue";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About SCM Supply FZCO | Industrial Procurement & Logistics Partner",
+  title: "About SCM Supply FZCO | Global Industrial Procurement & MRO Experts",
   description:
-    "SCM Supply FZCO is an international procurement, logistics and industrial supply company based in USA and UAE (Dubai), supporting industrial, oil & gas and commercial operations worldwide.",
+    "SCM Supply Global Supplier of Tools, Valves, Fittings, Pumps, Seals, Electrical, Safety, Hose & Hydraulic Components, and MRO Products Trusted by Oil & Gas • Manufacturing • Marine • Facilities • Worldwide Shipping from USA & UAE via Leading Freight Networks",
+
+  // Canonical URL
+  alternates: {
+    canonical: "https://scm-supply.com/about",
+  },
+
+  // OpenGraph for social sharing
+  openGraph: {
+    title: "About SCM Supply FZCO | Global Industrial Procurement Specialists",
+    description:
+      "Leading global supplier of industrial tools, MRO equipment, valves, pumps & safety solutions with operations in the UAE & USA.",
+    url: "https://scm-supply.com/about",
+    siteName: "SCM Supply FZCO",
+    type: "website",
+    locale: "en_US",
+    images: [
+      {
+        url: "/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "SCM Supply FZCO Industrial Procurement",
+      },
+    ],
+  },
+
+  // Twitter cards
+  twitter: {
+    card: "summary_large_image",
+    title: "About SCM Supply FZCO",
+    description:
+      "Global industrial procurement & MRO supply partner operating across the UAE & USA.",
+    images: ["/logo.png"],
+  },
+
+  // Robots + Googlebot
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: false,
+      notranslate: false,
+      nosnippet: false,
+      "max-snippet": -1,
+      "max-image-preview": "large",
+      "max-video-preview": -1,
+    },
+  },
 };
+
 
 export default function AboutPage() {
   return (

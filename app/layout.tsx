@@ -10,6 +10,22 @@ export const metadata: Metadata = {
   title: "SCM Supply FZCO | Industrial Procurement & Supply-Chain Partner",
   description:
     "SCM Supply FZCO - Your strategic partner for global industrial procurement, oil & gas parts, MRO supplies, and supply-chain solutions from USA & UAE (Dubai).",
+  keywords: [
+    "SCM Supply FZCO",
+    "Industrial Procurement",
+    "MRO Supplies",
+    "Oil & Gas Parts",
+    "Global Supplier",
+    "UAE Industrial Supply",
+    "USA Industrial Supply",
+    "Supply-Chain Solutions",
+    "Dubai Industrial Supplier",  ],
+    
+    icons: {
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
+  },
 };
 
 export default function RootLayout({
