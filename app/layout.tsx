@@ -9,7 +9,7 @@ import WhatsAppFloat from "@/components/WhatsAppFloat";
 export const metadata: Metadata = {
   title: "SCM Supply FZCO | Industrial Procurement & Supply-Chain Partner",
   description:
-    "SCM Supply FZCO - Your strategic partner for global industrial procurement, oil & gas parts, MRO supplies, and supply-chain solutions from USA & UAE (Dubai).",
+    "SCM Supply Global Supplier of Tools, Valves, Fittings, Pumps, Seals, Electrical, Safety, Hose & Hydraulic Components, and MRO Products Trusted by Oil & Gas • Manufacturing • Marine • Facilities • Worldwide Shipping from USA & UAE via Leading Freight Networks",
   keywords: [
     "SCM Supply FZCO",
     "Industrial Procurement",
@@ -21,14 +21,8 @@ export const metadata: Metadata = {
     "Supply-Chain Solutions",
     "Dubai Industrial Supplier",],
 
-  other: {
-    "google-site-verification": "HVVOwpMg-C7nPFMNiUr3LA-MISmQlY6lUeQ3R6ppVSo",
-  },
-
-  icons: {
-    icon: "/logo.png",
-    shortcut: "/logo.png",
-    apple: "/logo.png",
+  verification: {
+    google: 'google-site-verification = HVVOwpMg-C7nPFMNiUr3LA-MISmQlY6lUeQ3R6ppVSo',
   },
 };
 
