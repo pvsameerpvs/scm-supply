@@ -8,9 +8,9 @@ import { ProductImages } from "./_components/product-images";
 import { ProductTabs } from "./_components/product-tabs";
 
 type ProductPageProps = {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 };
 
 type Product = NonNullable<ReturnType<typeof getProductBySlug>>;
@@ -19,8 +19,13 @@ export function generateStaticParams() {
   return productCategories.map((p) => ({ slug: p.slug }));
 }
 
-export function generateMetadata({ params }: ProductPageProps): Metadata {
-  const product = getProductBySlug(params.slug);
+export const dynamicParams = false;
+
+export async function generateMetadata({
+  params,
+}: ProductPageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const product = getProductBySlug(slug);
   if (!product) return {};
   return {
     title: product.seoTitle,
@@ -28,8 +33,9 @@ export function generateMetadata({ params }: ProductPageProps): Metadata {
   };
 }
 
-export default function ProductPage({ params }: ProductPageProps) {
-  const product = getProductBySlug(params.slug);
+export default async function ProductPage({ params }: ProductPageProps) {
+  const { slug } = await params;
+  const product = getProductBySlug(slug);
 
   if (!product) {
     notFound();

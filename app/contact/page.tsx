@@ -61,17 +61,17 @@ export default function ContactPage() {
               <p>
                 <span className="font-semibold">Email:</span>{" "}
                 <a
-                  href="mailto:info@scmsupply.com"
+                  href="mailto:hisham@scmsupply.com"
                   className="text-slate-900 hover:underline"
                 >
-                  info@scmsupply.com
+                  hisham@scmsupply.com
                 </a>{" "}
                 /{" "}
                 <a
-                  href="mailto:sales@scmsupply.com"
+                  href="mailto:hisham@scmsupply.com"
                   className="text-slate-900 hover:underline"
                 >
-                  sales@scmsupply.com
+                  hisham@scmsupply.com
                 </a>
               </p>
             </div>
@@ -105,10 +105,10 @@ export default function ContactPage() {
               <p>
                 <span className="font-semibold">Email:</span>{" "}
                 <a
-                  href="mailto:sales@scmsupply.com"
+                  href="mailto:hisham@scmsupply.com"
                   className="text-slate-900 hover:underline"
                 >
-                  sales@scmsupply.com
+                  hisham@scmsupply.com
                 </a>
               </p>
             </div>
@@ -130,17 +130,17 @@ export default function ContactPage() {
               <p className="text-slate-700">
                 You can also email us directly at{" "}
                 <a
-                  href="mailto:sales@scmsupply.com"
+                  href="mailto:hisham@scmsupply.com"
                   className="font-semibold text-slate-900 hover:underline"
                 >
-                  sales@scmsupply.com
+                  hisham@scmsupply.com
                 </a>{" "}
                 or{" "}
                 <a
-                  href="mailto:info@scmsupply.com"
+                  href="mailto:hisham@scmsupply.com"
                   className="font-semibold text-slate-900 hover:underline"
                 >
-                  info@scmsupply.com
+                  hisham@scmsupply.com
                 </a>
                 .
               </p>

@@ -40,10 +40,10 @@ export function MainFooter() {
           <div className="flex items-start gap-2 text-sm">
             <Mail className="h-4 w-4 text-slate-800 mt-0.5" />
             <a
-              href="mailto:sales@scmsupply.com"
+              href="mailto:hisham@scmsupply.com"
               className="hover:text-slate-950"
             >
-              sales@scmsupply.com
+              hisham@scmsupply.com
             </a>
           </div>
         </div>
